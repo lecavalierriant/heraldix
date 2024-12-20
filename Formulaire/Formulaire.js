@@ -10,14 +10,14 @@ function accorderParticulier() {
 		function() {
 			particulier = this.value;
 			valeurs = particuliers[codes[particulier.split(" ")[0]]][particulier.slice(3)];
-			index = 0;
+			indice = 0;
 			for (nom of Object.keys(valeurs)) {
-				if (Object.keys(valeurs)[index] == "devise" || Object.keys(valeurs)[index] == "cri") {
+				if (Object.keys(valeurs)[indice] == "devise" || Object.keys(valeurs)[indice] == "cri") {
 					obtenir(nom, "N")[0].value = valeurs[nom][1];
 				} else {
 					obtenir(nom, "N")[0].value = valeurs[nom][0] + " " + valeurs[nom][1];
 				}
-				index++;
+				indice++;
 			}
 		}
 	);
@@ -29,14 +29,14 @@ function accorderProfil() {
 		function() {
 			profil = this.value;
 			valeurs = profils[codes[profil.split(" ")[0]]][profil.slice(3)];
-			index = 0;
+			indice = 0;
 			for (nom of Object.keys(valeurs)) {
-				if (Object.keys(valeurs)[index] == "devise" || Object.keys(valeurs)[index] == "cri") {
+				if (Object.keys(valeurs)[indice] == "devise" || Object.keys(valeurs)[indice] == "cri") {
 					obtenir(nom, "N")[0].value = valeurs[nom][1];
 				} else {
 					obtenir(nom, "N")[0].value = valeurs[nom][0] + " " + valeurs[nom][1];
 				}
-				index++;
+				indice++;
 			}
 		}
 	);
@@ -112,11 +112,11 @@ function remplir() {
 		"couronne-manteau",
 	];
 	obtenir("img-catégorie", "I").src = drapeaux["**"][0];
-	index = 0;
+	indice = 0;
 	for (liste of listes) {
 		if (liste == catégories || liste == profils || liste == particuliers) {
-			selectProfil = obtenir(noms[index], "I");
-		} else {selectProfil = obtenir(noms[index], "N")[0];}
+			selectProfil = obtenir(noms[indice], "I");
+		} else {selectProfil = obtenir(noms[indice], "N")[0];}
 		option = document.createElement("option");
 		if (liste == catégories) {option.textContent = "Tous";}
 		else {option.textContent = "∅";}
@@ -143,7 +143,7 @@ function remplir() {
 				selectProfil.appendChild(optgroup);
 			}
 		}
-		index ++;
+		indice++;
 	}
 }
 

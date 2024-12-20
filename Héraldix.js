@@ -79,7 +79,9 @@ function lettres() {
 					titre.innerHTML += " ";
 				}
 			} else {
-				titre.innerHTML += "<img src = Lettres/" + caractère + ".png alt = " + caractère + " class = img-lettrine-h1>";
+				titre.innerHTML +=
+					"<img src = Lettres/" + caractère + ".png alt = " + caractère + " class = img-lettrine-h1>"
+				;
 			}
 		}
 		titre.innerHTML += "<hr>";

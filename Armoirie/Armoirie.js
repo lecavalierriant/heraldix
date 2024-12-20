@@ -90,7 +90,7 @@ function déplacer(image, sens) {
 		}
 		décalage = obtenir(image, "I").style.marginRight;
 	}
-	aaa = {
+	indices = {
 		"img-couronne": 0,
 		"img-heaume": 1,
 		"img-portant-dextre": 2,
@@ -100,12 +100,12 @@ function déplacer(image, sens) {
 		"img-couronne-manteau": 6,
 		"img-collier": 7,
 	}
-	for (bbb of Object.keys(aaa)) {
-		if (image == bbb) {
+	for (indice of Object.keys(indices)) {
+		if (image == indice) {
 			if (sens == "↓" || sens == "↑") {
-				obtenir("span-transformer", "C")[3 * colonnes + aaa[bbb]].innerText = décalage;
+				obtenir("span-transformer", "C")[3 * colonnes + indices[indice]].innerText = décalage;
 			} else {
-				obtenir("span-transformer", "C")[2 * colonnes + aaa[bbb]].innerText = décalage;
+				obtenir("span-transformer", "C")[2 * colonnes + indices[indice]].innerText = décalage;
 			}
 		}
 	}
@@ -261,44 +261,68 @@ function remplir() {
 	tableParamètres = obtenir("table-paramètres", "I");
 	span = "<span class = span-transformer>∅</span></td>";
 	fonctions = ["\"redimensionner('", "\"déplacer('"];
-	aaa = ["←", "→", "↓", "↑"];
+	sens = ["←", "→", "↓", "↑"];
 	ligne = "";
 	for (i = 0; i < colonnes; i++) {
-		ligne += "<td>" + "<button onclick = " + "basculer(this.innerText)" + ">" + Object.keys(images)[i] + "</button>";
+		ligne += "<td><button onclick = basculer(this.innerText)>" + Object.keys(images)[i] + "</button>";
 	}
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 	ligne = "";
 	for (i = 0; i < colonnes; i++) {
 		ligne +=
-			"<td>" + "<button onclick = " + fonctions[0] + images[Object.keys(images)[i]][2] + "', '" + aaa[0] + "')\">" + "-" + "</button>"
+			"<td>" +
+				"<button onclick = " + fonctions[0] + images[Object.keys(images)[i]][2] + "', '" + sens[0] + "')\">" +
+					"-" +
+				"</button>" +
+				"↔" +
+				"<button onclick = " + fonctions[0] + images[Object.keys(images)[i]][2] + "', '" + sens[1] + "')\">" +
+					"+" +
+				"</button>" +
+				span
 		;
-		ligne += "↔";
-		ligne += "<button onclick = " + fonctions[0] + images[Object.keys(images)[i]][2] + "', '" + aaa[1] + "')\">" + "+" + "</button>";
-		ligne += span;
 	}
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 	ligne = "";
 	for (i = 0; i < colonnes; i++) {
 		ligne +=
-			"<td>" + "<button onclick = " + fonctions[0] + images[Object.keys(images)[i]][2] + "', '" + aaa[2] + "')\">" + "-" + "</button>"
+			"<td>" +
+				"<button onclick = " + fonctions[0] + images[Object.keys(images)[i]][2] + "', '" + sens[2] + "')\">" +
+					"-" +
+				"</button>" +
+				"↕" +
+				"<button onclick = " + fonctions[0] + images[Object.keys(images)[i]][2] + "', '" + sens[3] + "')\">" +
+					"+" +
+				"</button>" +
+				span
 		;
-		ligne += "↕";
-		ligne += "<button onclick = " + fonctions[0] + images[Object.keys(images)[i]][2] + "', '" + aaa[3] + "')\">" + "+" + "</button>";
-		ligne += span;
 	}
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 	ligne = "";
 	for (i = 0; i < colonnes; i++) {
-		ligne += "<td>" + "<button onclick = " + fonctions[1] + images[Object.keys(images)[i]][2] + "', '" + aaa[0] + "')\">" + "←" + "</button>";
-		ligne += "<button onclick = " + fonctions[1] + images[Object.keys(images)[i]][2] + "', '" + aaa[1] + "')\">" + "→" + "</button>";
-		ligne += span;
+		ligne +=
+			"<td>" +
+				"<button onclick = " + fonctions[1] + images[Object.keys(images)[i]][2] + "', '" + sens[0] + "')\">" +
+					"←" +
+				"</button>" +
+				"<button onclick = " + fonctions[1] + images[Object.keys(images)[i]][2] + "', '" + sens[1] + "')\">" +
+					"→" +
+				"</button>" +
+				span
+		;
 	}
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 	ligne = "";
 	for (i = 0; i < colonnes; i++) {
-		ligne += "<td>" + "<button onclick = " + fonctions[1] + images[Object.keys(images)[i]][2] + "', '" + aaa[2] + "')\">" + "↓" + "</button>";
-		ligne += "<button onclick = " + fonctions[1] + images[Object.keys(images)[i]][2] + "', '" + aaa[3] + "')\">" + "↑" + "</button>";
-		ligne += span;
+		ligne +=
+			"<td>" +
+				"<button onclick = " + fonctions[1] + images[Object.keys(images)[i]][2] + "', '" + sens[2] + "')\">" +
+					"↓" +
+				"</button>" +
+				"<button onclick = " + fonctions[1] + images[Object.keys(images)[i]][2] + "', '" + sens[3] + "')\">" +
+					"↑" +
+				"</button>" +
+				span
+		;
 	}
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 }
@@ -319,7 +343,9 @@ function titrer() {
 			if (couronne == couronneManteau) {
 				intérieur += concordance(couronne.slice(3), false);
 			} else {
-				intérieur += concordance(couronne.slice(3), false) + " & " + concordance(couronneManteau.slice(3), true);
+				intérieur +=
+					concordance(couronne.slice(3), false) + " & " + concordance(couronneManteau.slice(3), true)
+				;
 			}
 		} else {
 			intérieur += concordance(couronne.slice(3), false);
@@ -327,7 +353,7 @@ function titrer() {
 	}
 	if (écu) {intérieur += concordance(écu.slice(3), false);}
 	document.title = "Armoirie" + intérieur + " — Héraldix";
-	obtenir("h1", "S")[0].innerHTML = "<hr>" + "ARMOIRIE" + intérieur + "<hr>";
+	obtenir("h1", "S")[0].innerHTML = "<hr>ARMOIRIE" + intérieur + "<hr>";
 	lettres();
 }
 
