@@ -327,10 +327,7 @@ function titrer() {
 	}
 	if (écu) {intérieur += concordance(écu.slice(3), false);}
 	document.title = "Armoirie" + intérieur + " — Héraldix";
-	obtenir("h1", "S")[0].innerHTML = "<hr>";
-	obtenir("h1", "S")[0].innerHTML += "ARMOIRIE";
-	obtenir("h1", "S")[0].innerHTML += intérieur;
-	obtenir("h1", "S")[0].innerHTML += "<hr>";
+	obtenir("h1", "S")[0].innerHTML = "<hr>" + "ARMOIRIE" + intérieur + "<hr>";
 	lettres();
 }
 
