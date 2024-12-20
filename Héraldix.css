@@ -99,6 +99,7 @@ img {
 	margin-right: -12.5px;
 	margin-left: -12.5px;
 }
+.img-lettrine-h1[alt = "J"] {margin-right: -12.5px;}
 .img-lettrine-h2 {
 	width: 30px;
 	margin-bottom: -1px;
