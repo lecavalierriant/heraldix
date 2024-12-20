@@ -317,15 +317,15 @@ function titrer() {
 	if (couronne) {
 		if (couronneManteau) {
 			if (couronne == couronneManteau) {
-				intérieur += concordance(couronne.slice(3));
+				intérieur += concordance(couronne.slice(3), false);
 			} else {
-				intérieur += concordance(couronne.slice(3)) + " & " + concordance(couronneManteau.slice(3));
+				intérieur += concordance(couronne.slice(3), false) + " & " + concordance(couronneManteau.slice(3), true);
 			}
 		} else {
-			intérieur += concordance(couronne.slice(3));
+			intérieur += concordance(couronne.slice(3), false);
 		}
 	}
-	if (écu) {intérieur += concordance(écu.slice(3));}
+	if (écu) {intérieur += concordance(écu.slice(3), false);}
 	document.title = "Armoirie" + intérieur + " — Héraldix";
 	obtenir("h1", "S")[0].innerHTML = "<hr>";
 	obtenir("h1", "S")[0].innerHTML += "ARMOIRIE";
@@ -334,16 +334,16 @@ function titrer() {
 	lettres();
 }
 
-function concordance(mot) {
+function concordance(mot, article) {
 	if (voyelles.includes(mot[0])) {
-		return " d'" + mot; // H muets...
+		return article ? mot : " d'" + mot; // H muets...
 	} else {
 		if (mot.split(" ")[0] == "Le") {
-			return " du " + mot.slice(3);
+			return article ? mot.slice(3) : " du " + mot.slice(3);
 		} else if (mot.split(" ")[0] == "Les") {
-			return " des " + mot.slice(4);
+			return article ? mot.slice(4) : " des " + mot.slice(4);
 		} else {
-			return " de " + mot;
+			return article ? mot : " de " + mot;
 		}
 	}
 }
