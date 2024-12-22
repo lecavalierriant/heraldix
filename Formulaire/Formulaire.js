@@ -4,6 +4,23 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
+function accorderBranche() {
+	valeur = "";
+	obtenir("input-branche", "I").addEventListener(
+		"change",
+		function() {
+			if (this.checked) {
+				obtenir("branche", "N")[0].value = valeur;
+				obtenir("div-branche", "I").style.display = "block";
+			} else {
+				valeur = obtenir("branche", "N")[0].value;
+				obtenir("div-branche", "I").style.display = "none";
+				obtenir("branche", "N")[0].value = "";
+			}
+		}
+	);
+}
+
 function accorderParticulier() {
 	obtenir("select-particulier", "I").addEventListener(
 		"change",
@@ -48,13 +65,12 @@ function accorderManteau() {
 		"change",
 		function() {
 			if (this.value == "") {
-				obtenir("div-couronne-manteau", "I").style.display = "none";
 				valeur = obtenir("couronne-manteau", "N")[0].value;
+				obtenir("div-couronne-manteau", "I").style.display = "none";
 				obtenir("couronne-manteau", "N")[0].value = "";
 			} else {
 				obtenir("div-couronne-manteau", "I").style.display = "block";
 				obtenir("couronne-manteau", "N")[0].value = valeur;
-
 			}
 		}
 	);
@@ -91,6 +107,7 @@ function initialiser() {
 	filtrer();
 	accorderProfil();
 	accorderParticulier();
+	accorderBranche();
 	accorderManteau();
 }
 
