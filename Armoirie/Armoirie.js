@@ -6,16 +6,17 @@
 
 URL = new URLSearchParams(window.location.search);
 
+écu = URL.get("écu");
+branche = URL.get("branche");
 couronne = URL.get("couronne");
 heaume = URL.get("heaume");
 portantDextre = URL.get("portant-dextre");
-écu = URL.get("écu");
 portantSenestre = URL.get("portant-senestre");
 collier = URL.get("collier");
 manteau = URL.get("manteau");
 couronneManteau = URL.get("couronne-manteau");
-cri = URL.get("cri");
 devise = URL.get("devise");
+cri = URL.get("cri");
 
 colonnes = 8;
 lignes = 5;
@@ -352,6 +353,7 @@ function titrer() {
 		}
 	}
 	if (écu) {intérieur += concordance(écu.slice(3), false);}
+	if (branche) {intérieur += " " + branche}
 	document.title = "Armoirie" + intérieur + " — Héraldix";
 	obtenir("h1", "S")[0].innerHTML = "<hr>ARMOIRIE" + intérieur + "<hr>";
 	lettres();
