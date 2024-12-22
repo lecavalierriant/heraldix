@@ -59,7 +59,7 @@ function remplir() {
 					for (i = 0; i < tableaux[tableau][1][catégorie][profil].length; i++) {
 						ligne +=
 							"<td>" +
-								"<a href = \"" + tableaux[tableau][1][catégorie][profil][i] + "\">" +
+								"<a href = " + tableaux[tableau][1][catégorie][profil][i] + ">" +
 									"<img src = \"" +
 									tableaux[tableau][1][catégorie][profil][i] +
 									"\" class = img-icône>" +
@@ -139,7 +139,7 @@ function remplirProfils() {
 					for (i = 0; i < couronnes[catégorie][profil].length; i++) {
 						cellules +=
 							"<td>" +
-								"<a href = \"" + couronnes[catégorie][profil][i] + "\">" +
+								"<a href = " + couronnes[catégorie][profil][i] + ">" +
 									"<img src = \"" + couronnes[catégorie][profil][i] + "\" class = img-icône>" +
 								"</a>" +
 							"</td>"
