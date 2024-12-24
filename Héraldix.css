@@ -94,7 +94,8 @@ img {
 .img-caractère-h1[alt = "É"] {margin-top: 0;}
 .img-caractère-h1[alt = "Ç"],
 .img-caractère-h1[alt = "Q"] {margin-bottom: -12.5px;}
-.img-caractère-h1[alt = "I"] {
+.img-caractère-h1[alt = "I"],
+.img-caractère-h1[alt = "'"]{
 	margin-right: -12.5px;
 	margin-left: -12.5px;
 }
