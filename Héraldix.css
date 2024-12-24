@@ -85,21 +85,21 @@ img {
 	filter: drop-shadow(0 0 2px #000000);
 	border-radius: 0;
 }
-.img-lettrine-h1 {
+.img-caractère-h1 {
 	margin-top: 15px;
 	width: 50px;
 }
-.img-lettrine-h1[alt = "Æ"],
-.img-lettrine-h1[alt = "Œ"] {width: 76.4px;}
-.img-lettrine-h1[alt = "É"] {margin-top: 0;}
-.img-lettrine-h1[alt = "Ç"],
-.img-lettrine-h1[alt = "Q"] {margin-bottom: -12.5px;}
-.img-lettrine-h1[alt = "I"] {
+.img-caractère-h1[alt = "Æ"],
+.img-caractère-h1[alt = "Œ"] {width: 76.4px;}
+.img-caractère-h1[alt = "É"] {margin-top: 0;}
+.img-caractère-h1[alt = "Ç"],
+.img-caractère-h1[alt = "Q"] {margin-bottom: -12.5px;}
+.img-caractère-h1[alt = "I"] {
 	margin-right: -12.5px;
 	margin-left: -12.5px;
 }
-.img-lettrine-h1[alt = "J"] {margin-right: -12.5px;}
-.img-lettrine-h2 {
+.img-caractère-h1[alt = "J"] {margin-right: -12.5px;}
+.img-caractère-h2 {
 	width: 30px;
 	margin-bottom: -1px;
 }
@@ -165,8 +165,8 @@ th {display: none;}
 
 	hr {height: 4px;}
 
-	.img-lettrine-h1 {width: 90px;}
-	.img-lettrine-h1 {width: 50px;}
+	.img-caractère-h1 {width: 90px;}
+	.img-caractère-h1 {width: 50px;}
 	.img-logo {width: 300px;}
 
 	.important {

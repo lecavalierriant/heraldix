@@ -64,7 +64,7 @@ function obtenir(identifiant, type) {
 	}
 }
 
-function lettres() {
+function caractères() {
 	for (titre of obtenir("h1", "S")) {
 		texte = titre.innerText;
 		titre.innerHTML = "<hr>";
@@ -78,9 +78,13 @@ function lettres() {
 				} else {
 					titre.innerHTML += " ";
 				}
+			} else if (caractère == "'") {
+				titre.innerHTML +=
+					"<img src = Caractères/apos.png alt = '\'' class = img-caractère-h1>"
+				;
 			} else {
 				titre.innerHTML +=
-					"<img src = Lettres/" + caractère + ".png alt = " + caractère + " class = img-lettrine-h1>"
+					"<img src = Caractères/" + caractère + ".png alt = " + caractère + " class = img-caractère-h1>"
 				;
 			}
 		}
@@ -88,7 +92,7 @@ function lettres() {
 	}
 }
 
-window.addEventListener("load", lettres);
+window.addEventListener("load", caractères);
 
 // ================================================================================================================= //
 //                                                                                                                   //
