@@ -20,7 +20,7 @@ bâtons = {
 			Wikipédia + "8/87/Orn_ext_grand_maréchal_du_palais.svg",
 		],
 		"Maréchal": [
-			"https://static.wikia.nocookie.net/aigles-et-lys/images/2/29/Bâtons_de_maréchal_(Premier_Empire).svg/revision/latest?cb=20160730160242&path-prefix=fr",
+			"https://static.wikia.nocookie.net/aigles-et-lys/images/2/29/Bâtons_de_maréchal_%28Premier_Empire%29.svg/revision/latest?cb=20160730160242&path-prefix=fr",
 		],
 	},
 	// "Villes françaises": {},
