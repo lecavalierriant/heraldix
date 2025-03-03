@@ -66,7 +66,7 @@
 			Wikipédia + "2/24/Arms_of_the_Counts_of_Luxembourg.svg",
 			Wikipédia + "a/a0/Armoiries_Lusignan_Chypre.svg",
 			Wikipédia + "4/4d/Blason_maison_fr_de_Lusignan.svg",
-		],		
+		],
 		"Maupeou": [
 			Wikipédia + "9/98/Blason_famille_fr_de_Maupeou.svg",
 			Wikipédia + "f/f1/Blason_ville_fr_Ableiges_(Val-d'Oise).svg",
@@ -153,7 +153,7 @@
 		"Wallace": [
 			Wikipédia + "6/69/Wallace_of_that_Ilk.svg",
 		],
-	},	
+	},
 	"Saint-Empire romain germanique": {
 		"Empire" : [
 			Wikipédia + "4/43/Arms_of_the_Holy_Roman_Emperor_(c.1433-c.1450).svg",

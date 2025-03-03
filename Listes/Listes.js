@@ -48,7 +48,7 @@ function remplir() {
 	k = 0;
 	for (tableau of Object.keys(tableaux)) {
 		if (tableau == "Profils" || tableau == "Particuliers") {
-			// 
+			//
 		} else {
 			for (catégorie of Object.keys(tableaux[tableau][1])) {
 				obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML =

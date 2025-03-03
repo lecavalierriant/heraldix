@@ -54,7 +54,6 @@ portants = {
 		"Dragon": [
 			Wikipédia + "c/c5/Héraldique_meuble_Dragon_(wyvern).svg",
 			Wikipédia + "0/0b/Meuble_héraldique_Dragon_(wyvern).svg",
-		
 		],
 		"Licorne": [
 			Wikipédia + "9/96/Unicorn_Supporter_(Heraldry).svg",
