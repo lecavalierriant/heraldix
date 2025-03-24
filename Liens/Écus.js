@@ -38,6 +38,7 @@
 		],
 		"Chavagnac": [
 			"Armoirie/Écus/Chavagnac.png",
+			"Armoirie/Écus/Chavagnac 2.png",
 			"https://data.man8rove.com/images/arms/full/1jo8ll90a-1.png",
 			Wikipédia + "d/d3/Blason_famille_Chavagnac_moderne.svg",
 			Wikipédia + "d/d6/Blason_famille_fr_de_Chavagnac.svg",
