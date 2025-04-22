@@ -1,6 +1,6 @@
-**Héraldix**
+# Héraldix
 
-*© 2025 — Le Cavalier Riant*
+*© Le Cavalier Riant*
 
 Une application de création d'armoiries héraldiques.
 
