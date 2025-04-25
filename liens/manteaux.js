@@ -4,29 +4,39 @@
 //                                                                                                                   //
 // ================================================================================================================= //
 
-bâtons = {
-	// "**": {},
-	"Royaume de France": {
-		"Grand maître": [
-			Wikipédia + "a/a4/Orn_ext_Grand_Maitre_de_France.svg",
+manteaux = {
+	"**": {
+		"Rouge": [
+			Wikipédia + "0/06/Generic_mantle.svg",
 		],
-		"Maréchal": [
-			Wikipédia + "a/a7/Orn_ext_Maréchal_de_France.svg",
-			"armoirie/batons/RF Maréchal.svg",
+	},
+	"Royaume de France": {
+		"France": [
+			"armoirie/manteaux/RF France.svg",
+			Wikipédia + "1/1e/Grand_Manteau_des_armoiries_du_Royaume_de_France.svg",
+		],
+		"Pair": [
+			Wikipédia + "a/a7/Blue_heraldic_mantle.svg",
+			Wikipédia + "b/b6/Meuble_héraldique_manteau_01.svg",
 		],
 	},
 	"Empire français": {
-		"Grand maréchal du palais": [
-			Wikipédia + "8/87/Orn_ext_grand_maréchal_du_palais.svg",
-		],
-		"Maréchal": [
-			"https://static.wikia.nocookie.net/aigles-et-lys/images/2/29/Bâtons_de_maréchal_%28Premier_Empire%29.svg/revision/latest?cb=20160730160242&path-prefix=fr",
+		"Empire": [
+			"armoirie/manteaux/EF Empire A.svg",
+			"armoirie/manteaux/EF Empire B.svg",
 		],
 	},
 	// "Villes françaises": {},
 	// "Royaume d'Espagne": {},
 	// "Royaume-Uni": {},
-	// "Saint-Empire romain germanique": {},
+	"Saint-Empire romain germanique": {
+		"Aigle": [
+			"armoirie/manteaux/ER Aigle.svg",
+			Wikipédia + "b/b7/Aigle_Bicéphale_Eployée.svg",
+			Wikipédia + "f/fa/Aigle_bicéphale_Saint-Empire.svg",
+			Wikipédia + "1/1d/Héraldique_meuble_Aigle_bicéphale_éploye.svg",
+		],
+	},
 	// "État du Vatican": {},
 	// "Royaume du Portugal": {},
 	// "Grand-Duché de Luxembourg": {},
