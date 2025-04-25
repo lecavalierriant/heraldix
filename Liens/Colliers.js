@@ -12,7 +12,7 @@ colliers = {
 	},
 	"Royaume de France": {
 		"Ordres de Saint-Michel et du Saint-Esprit": [
-			"Armoirie/Colliers/RF Ordres de Saint-Michel et du Saint-Esprit.svg",
+			"armoirie/colliers/RF Ordres de Saint-Michel et du Saint-Esprit.svg",
 		],
 		"Ordre du Saint-Esprit": [
 			Wikipédia + "3/34/Order_of_the_Holy_Spirit_(heraldry).svg",
@@ -21,13 +21,13 @@ colliers = {
 			Wikipédia + "5/53/Order_of_Saint_Michael_(heraldry).svg",
 		],
 		"Ordre de Saint-Louis": [
-			"Armoirie/Colliers/RF Ordre de Saint-Louis.png",
+			"armoirie/colliers/RF Ordre de Saint-Louis.png",
 		],
 	},
 	"Empire français": {
 		"Ordre de la Légion d'honneur": [
 			Wikipédia + "f/f0/Grand_collier_de_la_Légion_d'honneur.svg",
-			"Armoirie/Colliers/EF Ordre de la Légion d'honneur.svg",
+			"armoirie/colliers/EF Ordre de la Légion d'honneur.svg",
 		],
 	},
 	// "Villes françaises": {},

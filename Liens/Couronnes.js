@@ -58,7 +58,7 @@ couronnes = {
 			Wikipédia + "6/63/Rangkronen-Fig._14-Pair.png",
 		],
 		"Marquis": [
-			"Armoirie/Couronnes/Marquis.png",
+			"armoirie/couronnes/Marquis.png",
 			Wikipédia + "7/7a/Crown_of_a_Marquis_of_France_(variant).svg",
 			Wikipédia + "5/53/French_heraldic_crowns_-_marquis_v2.svg",
 			Creazilla + "7830865/french-crown-clipart-xl.png",
@@ -267,7 +267,7 @@ couronnes = {
 	},
 	"Royaume de Jérusalem": {
 		"Couronne d'épines": [
-			"Armoirie/Couronnes/RJ Couronne d'épines.svg",
+			"armoirie/couronnes/RJ Couronne d'épines.svg",
 		],
 	},
 }

@@ -12,7 +12,7 @@ bâtons = {
 		],
 		"Maréchal": [
 			Wikipédia + "a/a7/Orn_ext_Maréchal_de_France.svg",
-			"Armoirie/Bâtons/RF Maréchal.svg",
+			"armoirie/batons/RF Maréchal.svg",
 		],
 	},
 	"Empire français": {

@@ -80,11 +80,11 @@ function caractères() {
 				}
 			} else if (caractère == "'") {
 				titre.innerHTML +=
-					"<img src = Caractères/apos.png alt = '\'' class = img-caractère-h1>"
+					"<img src = caracteres/apos.png alt = '\'' class = img-caractère-h1>"
 				;
 			} else {
 				titre.innerHTML +=
-					"<img src = Caractères/" + caractère + ".png alt = " + caractère + " class = img-caractère-h1>"
+					"<img src = caracteres/" + caractère + ".png alt = " + caractère + " class = img-caractère-h1>"
 				;
 			}
 		}
