@@ -7,12 +7,12 @@
 portants = {
 	"**": {
 		"Ange": [
-			"Armoirie/Portants/Ange.png",
+			"armoirie/portants/ange.png",
 			Wikipédia + "f/ff/Angelic_Supporter_(Heraldry).svg",
 			Wikipédia + "6/68/Meuble_héraldique_Ange_debout.svg",
 		],
 		"Lion": [
-			"Armoirie/Portants/Lion.png",
+			"armoirie/portants/lion.png",
 			Wikipédia + "6/62/Lion_rampant_guardant_as_supporter_(Or).svg",
 			Wikipédia + "6/66/Royal_Coat_of_Arms_of_the_United_Kingdom-Lion.svg",
 		],
@@ -67,3 +67,4 @@ portants = {
 //                                                     Héraldix                                                      //
 //                                                                                                                   //
 // ================================================================================================================= //
+
