@@ -80,14 +80,17 @@ img {
 }
 .caractère {
 	margin-top: 15px;
-	width: 50px;
+	height: 50px;
 }
-.caractère[alt = "Æ"],
-.caractère[alt = "Œ"],
-.caractère[alt = "M"] {width: 76.4px;}
-.caractère[alt = "É"] {margin-top: 0;}
+.caractère[alt = "É"] {
+	margin-top: 0;
+	height: 63px;
+}
 .caractère[alt = "Ç"],
-.caractère[alt = "Q"] {margin-bottom: -12.5px;}
+.caractère[alt = "Q"] {
+	margin-bottom: -12.5px;
+	height: 63px;
+}
 .caractère[alt = "I"],
 .caractère[alt = "'"] {
 	margin-right: -12.5px;
@@ -95,7 +98,7 @@ img {
 }
 .caractère[alt = "J"] {margin-right: -12.5px;}
 h2 .caractère {
-	width: 30px;
+	height: 30px;
 	margin-bottom: -1px;
 }
 .logo {
