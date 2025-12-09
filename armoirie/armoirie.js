@@ -1,9 +1,3 @@
-// ================================================================================================================= //
-//                                                                                                                   //
-//                                                     Héraldix                                                      //
-//                                                                                                                   //
-// ================================================================================================================= //
-
 URL = new URLSearchParams(window.location.search);
 
 écu = URL.get("écu");
@@ -104,9 +98,9 @@ function déplacer(image, sens) {
 	for (indice of Object.keys(indices)) {
 		if (image == indice) {
 			if (sens == "↓" || sens == "↑") {
-				obtenir("span-transformer", "C")[3 * colonnes + indices[indice]].innerText = décalage;
+				obtenir("transformer", "C")[3 * colonnes + indices[indice]].innerText = décalage;
 			} else {
-				obtenir("span-transformer", "C")[2 * colonnes + indices[indice]].innerText = décalage;
+				obtenir("transformer", "C")[2 * colonnes + indices[indice]].innerText = décalage;
 			}
 		}
 	}
@@ -236,31 +230,31 @@ function redimensionner(image, sens) {
 	if (sens == "←" || sens == "→") {
 		obtenir(image, "I").width += (sens == "→" ? 10 : -10);
 		taille = obtenir(image, "I").width;
-		if (image == "img-couronne") {obtenir("span-transformer", "C")[0].innerHTML = taille;} else
-		if (image == "img-heaume") {obtenir("span-transformer", "C")[1].innerHTML = taille;} else
-		if (image == "img-portant-dextre") {obtenir("span-transformer", "C")[2].innerHTML = taille;} else
-		if (image == "img-écu") {obtenir("span-transformer", "C")[3].innerHTML = taille;} else
-		if (image == "img-portant-senestre") {obtenir("span-transformer", "C")[4].innerHTML = taille;} else
-		if (image == "img-manteau") {obtenir("span-transformer", "C")[5].innerHTML = taille;} else
-		if (image == "img-couronne-manteau") {obtenir("span-transformer", "C")[6].innerHTML = taille;} else
-		if (image == "img-collier") {obtenir("span-transformer", "C")[7].innerHTML = taille;}
+		if (image == "img-couronne") {obtenir("transformer", "C")[0].innerHTML = taille;} else
+		if (image == "img-heaume") {obtenir("transformer", "C")[1].innerHTML = taille;} else
+		if (image == "img-portant-dextre") {obtenir("transformer", "C")[2].innerHTML = taille;} else
+		if (image == "img-écu") {obtenir("transformer", "C")[3].innerHTML = taille;} else
+		if (image == "img-portant-senestre") {obtenir("transformer", "C")[4].innerHTML = taille;} else
+		if (image == "img-manteau") {obtenir("transformer", "C")[5].innerHTML = taille;} else
+		if (image == "img-couronne-manteau") {obtenir("transformer", "C")[6].innerHTML = taille;} else
+		if (image == "img-collier") {obtenir("transformer", "C")[7].innerHTML = taille;}
 	} else {
 		obtenir(image, "I").height += (sens == "↑" ? 10 : -10);
 		taille = obtenir(image, "I").height;
-		if (image == "img-couronne") {obtenir("span-transformer", "C")[colonnes + 0].innerHTML = taille;} else
-		if (image == "img-heaume") {obtenir("span-transformer", "C")[colonnes + 1].innerHTML = taille;} else
-		if (image == "img-portant-dextre") {obtenir("span-transformer", "C")[colonnes + 2].innerHTML = taille;} else
-		if (image == "img-écu") {obtenir("span-transformer", "C")[colonnes + 3].innerHTML = taille;} else
-		if (image == "img-portant-senestre") {obtenir("span-transformer", "C")[colonnes + 4].innerHTML = taille;} else
-		if (image == "img-manteau") {obtenir("span-transformer", "C")[colonnes + 5].innerHTML = taille;} else
-		if (image == "img-couronne-manteau") {obtenir("span-transformer", "C")[colonnes + 6].innerHTML = taille;} else
-		if (image == "img-collier") {obtenir("span-transformer", "C")[colonnes + 7].innerHTML = taille;}
+		if (image == "img-couronne") {obtenir("transformer", "C")[colonnes + 0].innerHTML = taille;} else
+		if (image == "img-heaume") {obtenir("transformer", "C")[colonnes + 1].innerHTML = taille;} else
+		if (image == "img-portant-dextre") {obtenir("transformer", "C")[colonnes + 2].innerHTML = taille;} else
+		if (image == "img-écu") {obtenir("transformer", "C")[colonnes + 3].innerHTML = taille;} else
+		if (image == "img-portant-senestre") {obtenir("transformer", "C")[colonnes + 4].innerHTML = taille;} else
+		if (image == "img-manteau") {obtenir("transformer", "C")[colonnes + 5].innerHTML = taille;} else
+		if (image == "img-couronne-manteau") {obtenir("transformer", "C")[colonnes + 6].innerHTML = taille;} else
+		if (image == "img-collier") {obtenir("transformer", "C")[colonnes + 7].innerHTML = taille;}
 	}
 }
 
 function remplir() {
 	tableParamètres = obtenir("table-paramètres", "I");
-	span = "<span class = span-transformer>∅</span></td>";
+	span = "<span class = transformer>∅</span></td>";
 	fonctions = ["\"redimensionner('", "\"déplacer('"];
 	sens = ["←", "→", "↓", "↑"];
 	ligne = "";
@@ -372,9 +366,3 @@ function concordance(mot, article) {
 		}
 	}
 }
-
-// ================================================================================================================= //
-//                                                                                                                   //
-//                                                     Héraldix                                                      //
-//                                                                                                                   //
-// ================================================================================================================= //

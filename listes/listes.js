@@ -1,9 +1,3 @@
-// ================================================================================================================= //
-//                                                                                                                   //
-//                                                     Héraldix                                                      //
-//                                                                                                                   //
-// ================================================================================================================= //
-
 tableaux = {
 	"Profils": ["table-profils", profils, [6, 4]],
 	"Couronnes": ["table-couronnes", couronnes, 4],
@@ -62,13 +56,13 @@ function remplir() {
 								"<a href = " + tableaux[tableau][1][catégorie][profil][i] + ">" +
 									"<img src = \"" +
 									tableaux[tableau][1][catégorie][profil][i] +
-									"\" class = img-icône>" +
+									"\" class = icône>" +
 								"</a>" +
 							"</td>"
 						;
 					}
 					for (j = tableaux[tableau][1][catégorie][profil].length; j < tableaux[tableau][2]; j++) {
-						ligne += "<td class = td-vide></td>";
+						ligne += "<td class = vide></td>";
 					}
 					obtenir(tableaux[tableau][0], "I").insertRow().insertCell(0).outerHTML =
 						"<td>" + profil + "</td>" + ligne
@@ -140,20 +134,20 @@ function remplirProfils() {
 						cellules +=
 							"<td>" +
 								"<a href = " + couronnes[catégorie][profil][i] + ">" +
-									"<img src = \"" + couronnes[catégorie][profil][i] + "\" class = img-icône>" +
+									"<img src = \"" + couronnes[catégorie][profil][i] + "\" class = icône>" +
 								"</a>" +
 							"</td>"
 						;
 					}
 					for (j = couronnes[catégorie][profil].length; j < tableaux[tableau][2][0]; j++) {
-						cellules += "<td class = td-vide></td>";
+						cellules += "<td class = vide></td>";
 					}
 					delete couronnes[catégorie][profil];
 				} else {
-					cellules += "<td colspan = " + tableaux[tableau][2][0] + " class = td-vide></td>";
+					cellules += "<td colspan = " + tableaux[tableau][2][0] + " class = vide></td>";
 				}
 			} else {
-				cellules += "<td colspan = " + tableaux[tableau][2][0] + " class = td-vide></td>";
+				cellules += "<td colspan = " + tableaux[tableau][2][0] + " class = vide></td>";
 			}
 			if (Object.keys(heaumes).includes(catégorie)) {
 				if (Object.keys(heaumes[catégorie]).includes(profil)) {
@@ -161,20 +155,20 @@ function remplirProfils() {
 						cellules +=
 							"<td>" +
 								"<a href = " + heaumes[catégorie][profil][i] + ">" +
-									"<img src = \"" + heaumes[catégorie][profil][i] + "\" class = img-icône>" +
+									"<img src = \"" + heaumes[catégorie][profil][i] + "\" class = icône>" +
 								"</a>" +
 							"</td>"
 						;
 					}
 					for (j = heaumes[catégorie][profil].length; j < tableaux[tableau][2][1]; j++) {
-						cellules += "<td class = td-vide></td>";
+						cellules += "<td class = vide></td>";
 					}
 					delete heaumes[catégorie][profil];
 				} else {
-					cellules += "<td colspan = " + tableaux[tableau][2][0] + " class = td-vide></td>";
+					cellules += "<td colspan = " + tableaux[tableau][2][0] + " class = vide></td>";
 				}
 			} else {
-				cellules += "<td colspan = " + tableaux[tableau][2][1] + " class = td-vide></td>";
+				cellules += "<td colspan = " + tableaux[tableau][2][1] + " class = vide></td>";
 			}
 			obtenir("table-profils", "I").insertRow().insertCell(0).outerHTML =
 				"<td>" + profil + "</td>" + cellules
@@ -182,9 +176,3 @@ function remplirProfils() {
 		}
 	}
 }
-
-// ================================================================================================================= //
-//                                                                                                                   //
-//                                                     Héraldix                                                      //
-//                                                                                                                   //
-// ================================================================================================================= //

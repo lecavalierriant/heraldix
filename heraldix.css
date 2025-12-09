@@ -1,12 +1,6 @@
-/* ================================================================================================================= */
-/*                                                                                                                   */
-/*                                                     Héraldix                                                      */
-/*                                                                                                                   */
-/* ================================================================================================================= */
-
 * {
 	text-align: center;
-	font-family: Garamond, Georgia;
+	font-family: "garamond", "georgia";
 	font-size: 25px;
 	color: #ffffff;
 	border-radius: 20px;
@@ -47,9 +41,8 @@ select:hover {
 }
 
 div {justify-content: center;}
-.div-espace {margin-top: 250px;}
-.div-flex {display: flex;}
-#div-autre {
+.flex {display: flex;}
+#autre {
 	position: absolute;
 	z-index: 15;
 }
@@ -85,31 +78,31 @@ img {
 	filter: drop-shadow(0 0 2px #000000);
 	border-radius: 0;
 }
-.img-caractère-h1 {
+.caractère {
 	margin-top: 15px;
 	width: 50px;
 }
-.img-caractère-h1[alt = "Æ"],
-.img-caractère-h1[alt = "Œ"] {width: 76.4px;}
-.img-caractère-h1[alt = "É"] {margin-top: 0;}
-.img-caractère-h1[alt = "Ç"],
-.img-caractère-h1[alt = "Q"] {margin-bottom: -12.5px;}
-.img-caractère-h1[alt = "I"],
-.img-caractère-h1[alt = "'"]{
+.caractère[alt = "Æ"],
+.caractère[alt = "Œ"] {width: 76.4px;}
+.caractère[alt = "É"] {margin-top: 0;}
+.caractère[alt = "Ç"],
+.caractère[alt = "Q"] {margin-bottom: -12.5px;}
+.caractère[alt = "I"],
+.caractère[alt = "'"] {
 	margin-right: -12.5px;
 	margin-left: -12.5px;
 }
-.img-caractère-h1[alt = "J"] {margin-right: -12.5px;}
-.img-caractère-h2 {
+.caractère[alt = "J"] {margin-right: -12.5px;}
+h2 .caractère {
 	width: 30px;
 	margin-bottom: -1px;
 }
-.img-logo {
+.logo {
 	width: 200px;
 	border: 2px solid #ffffff;
 	border-radius: 40px;
 }
-.img-logo:hover {border: 2px solid #e8c869;}
+.logo:hover {border: 2px solid #e8c869;}
 
 span {
 	font-family: gabriola;
@@ -131,54 +124,48 @@ th {display: none;}
 
 @media (max-width: 1000px) {
 
-	* {
-		font-size: 50px;
-		border-radius: 50px;
-		box-shadow: 0 0 0;
-	}
-
-	button,
-	input,
-	select {
-		border: 4px #ffffff solid;
-		margin: 20px;
-		padding: 20px;
-	}
-	button:hover,
-	input:hover,
-	select:hover {
-		margin: 20px;
-		border: 4px #e8c869 solid;
-	}
-
-	fieldset {border: 4px solid #e8c869;}
-
-	h1 {
-		font-size: 120px;
-		margin-right: 0;
-		margin-left: 0;
-	}
-
-	h2 {
-		margin-right: 100px;
-		margin-left: 100px;
-	}
-
-	hr {height: 4px;}
-
-	.img-caractère-h1 {width: 90px;}
-	.img-caractère-h1 {width: 50px;}
-	.img-logo {width: 300px;}
-
-	.important {
-		bottom: 50px;
-		padding: 50px;
-	}
-
+* {
+	font-size: 50px;
+	border-radius: 50px;
+	box-shadow: 0 0 0;
 }
 
-/* ================================================================================================================= */
-/*                                                                                                                   */
-/*                                                     Héraldix                                                      */
-/*                                                                                                                   */
-/* ================================================================================================================= */
+button,
+input,
+select {
+	border: 4px #ffffff solid;
+	margin: 20px;
+	padding: 20px;
+}
+button:hover,
+input:hover,
+select:hover {
+	margin: 20px;
+	border: 4px #e8c869 solid;
+}
+
+fieldset {border: 4px solid #e8c869;}
+
+h1 {
+	font-size: 120px;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+h2 {
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+hr {height: 4px;}
+
+.caractère {width: 90px;}
+.caractère {width: 50px;}
+.logo {width: 300px;}
+
+.important {
+	bottom: 50px;
+	padding: 50px;
+}
+
+}

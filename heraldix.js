@@ -1,9 +1,3 @@
-// ================================================================================================================= //
-//                                                                                                                   //
-//                                                     Héraldix                                                      //
-//                                                                                                                   //
-// ================================================================================================================= //
-
 codes = {
 	"**": "**",
 	"RF": "Royaume de France",
@@ -80,11 +74,11 @@ function caractères() {
 				}
 			} else if (caractère == "'") {
 				titre.innerHTML +=
-					"<img src = caracteres/apos.png alt = '\'' class = img-caractère-h1>"
+					"<img src = caracteres/apos.png alt = '\'' class = caractère>"
 				;
 			} else {
 				titre.innerHTML +=
-					"<img src = caracteres/" + caractère + ".png alt = " + caractère + " class = img-caractère-h1>"
+					"<img src = caracteres/" + caractère + ".png alt = " + caractère + " class = caractère>"
 				;
 			}
 		}
@@ -93,9 +87,3 @@ function caractères() {
 }
 
 window.addEventListener("load", caractères);
-
-// ================================================================================================================= //
-//                                                                                                                   //
-//                                                     Héraldix                                                      //
-//                                                                                                                   //
-// ================================================================================================================= //
