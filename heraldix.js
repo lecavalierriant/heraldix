@@ -69,12 +69,10 @@ function caractères() {
 				if (compte > 14) {
 					titre.innerHTML += "<br>";
 					compte = 0;
-				} else {
-					titre.innerHTML += " ";
-				}
+				} else {titre.innerHTML += " ";}
 			} else if (caractère == "'") {
 				titre.innerHTML +=
-					"<img src = caracteres/apos.png alt = '\'' class = caractère>"
+					"<img src = caracteres/apos.png alt = &apos; class = caractère>"
 				;
 			} else {
 				titre.innerHTML +=
