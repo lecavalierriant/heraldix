@@ -83,7 +83,8 @@ img {
 	width: 50px;
 }
 .caractère[alt = "Æ"],
-.caractère[alt = "Œ"] {width: 76.4px;}
+.caractère[alt = "Œ"],
+.caractère[alt = "M"] {width: 76.4px;}
 .caractère[alt = "É"] {margin-top: 0;}
 .caractère[alt = "Ç"],
 .caractère[alt = "Q"] {margin-bottom: -12.5px;}
