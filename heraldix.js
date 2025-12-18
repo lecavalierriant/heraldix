@@ -28,22 +28,6 @@ catégories = {
 	"Royaume de Jérusalem": "RJ",
 }
 
-hauts = [
-	"À", "Á", "Â", "Ä",
-	"È", "É", "Ê", "Ë",
-	"Ì", "Í", "Î", "Ï",
-	"Ò", "Ó", "Ô", "Ö",
-	"Ù", "Ú", "Û", "Ü",
-	"Ỳ", "Ý", "Ŷ", "Ÿ",
-];
-
-bas = ["Ç", "Q"];
-
-articles = {
-	"Le": "du",
-	"Les": "des",
-};
-
 function obtenir(identifiant, type) {
 	if (type == "I") {
 		return document.getElementById(identifiant);
@@ -59,6 +43,19 @@ function obtenir(identifiant, type) {
 }
 
 function caractères() {
+	hauts = [
+		"À", "Á", "Â", "Ä",
+		"È", "É", "Ê", "Ë",
+		"Ì", "Í", "Î", "Ï",
+		"Ò", "Ó", "Ô", "Ö",
+		"Ù", "Ú", "Û", "Ü",
+		"Ỳ", "Ý", "Ŷ", "Ÿ",
+	];
+	bas = ["Ç", "Q", ","];
+	articles = {
+		"Le": "du",
+		"Les": "des",
+	};
 	for (titre of obtenir("h1", "S")) {
 		texte = titre.innerText;
 		titre.innerHTML = "<hr>";
