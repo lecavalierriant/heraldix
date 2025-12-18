@@ -28,7 +28,16 @@ catégories = {
 	"Royaume de Jérusalem": "RJ",
 }
 
+hauts = [
+	"À", "Á", "Â", "Ä",
+	"È", "É", "Ê", "Ë",
+	"Ì", "Í", "Î", "Ï",
+	"Ò", "Ó", "Ô", "Ö",
+	"Ù", "Ú", "Û", "Ü",
+	"Ỳ", "Ý", "Ŷ", "Ÿ",
 ];
+
+bas = ["Ç", "Q"];
 
 articles = {
 	"Le": "du",
@@ -63,7 +72,15 @@ function caractères() {
 				} else {titre.innerHTML += " ";}
 			} else if (caractère == "'") {
 				titre.innerHTML +=
-					"<img src = caracteres/apos.png alt = &apos; class = caractère>"
+					"<img src = caracteres/" + caractère + ".png alt = &apos; class = caractère>"
+				;
+			} else if (hauts.includes(caractère)) {
+				titre.innerHTML +=
+					"<img src = caracteres/" + caractère + ".png alt = " + caractère + " class = 'caractère haut'>"
+				;
+			} else if (hauts.includes(bas)) {
+				titre.innerHTML +=
+					"<img src = caracteres/" + caractère + ".png alt = " + caractère + " class = 'caractère bas'>"
 				;
 			} else {
 				titre.innerHTML +=
