@@ -1,6 +1,6 @@
 * {
 	text-align: center;
-	font-family: "garamond", "georgia";
+	font-family: "garamond";
 	font-size: 25px;
 	color: #ffffff;
 	border-radius: 20px;
@@ -82,22 +82,25 @@ img {
 	margin-top: 15px;
 	height: 50px;
 }
-.caractère[alt = "Á"], .caractère[alt = "Ä"],
-.caractère[alt = "É"], .caractère[alt = "Ë"],
-.caractère[alt = "Í"], .caractère[alt = "Ï"],
-.caractère[alt = "Ó"], .caractère[alt = "Ö"],
-.caractère[alt = "Ú"], .caractère[alt = "Ü"] {
+.haut {
 	margin-top: 0;
 	height: 63px;
 }
-.caractère[alt = "Ç"],
-.caractère[alt = "Q"] {
+.bas {
 	margin-bottom: -12.5px;
 	height: 63px;
 }
 h2 .caractère {
-	height: 30px;
+	margin-top: 9px;
 	margin-bottom: -1px;
+	height: 30px;
+}
+h2 .haut {
+	height: 37.8px;
+}
+h2 .bas {
+	margin-bottom: -7.5px;
+	height: 37.8px;
 }
 .logo {
 	width: 200px;
@@ -161,8 +164,8 @@ h2 {
 
 hr {height: 4px;}
 
-.caractère {width: 90px;}
-.caractère {width: 50px;}
+/*.caractère {width: 90px;}*/
+/*.caractère {width: 50px;}*/
 .logo {width: 300px;}
 
 .important {
