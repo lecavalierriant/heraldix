@@ -354,6 +354,16 @@ function titrer() {
 }
 
 function concordance(mot, article) {
+	voyelles = [
+		"A", "À", "Á", "Â", "Ä",
+		"Æ",
+		"E", "È", "É", "Ê", "Ë",
+		"I", "Ì", "Í", "Î", "Ï",
+		"O", "Ò", "Ó", "Ô", "Ö",
+		"Œ",
+		"U", "Ù", "Ú", "Û", "Ü",
+		"Y", "Ỳ", "Ý", "Ŷ", "Ÿ",
+	];
 	if (voyelles.includes(mot[0])) {
 		return article ? mot : " d'" + mot; // H muets...
 	} else {
