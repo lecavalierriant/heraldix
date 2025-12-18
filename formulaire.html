@@ -1,73 +1,73 @@
 <!doctype html>
-<html lang = fr>
+<html lang = "fr">
 <head>
 	<title>Formulaire — Héraldix</title>
-	<meta charset = utf-8>
-	<link rel = "shortcut icon" href = caracteres/F.png>
-	<link rel = stylesheet href = heraldix.css>
-	<link rel = stylesheet href = formulaire/Formulaire.css>
-	<script src = heraldix.js></script>
-	<script src = formulaire/Formulaire.js></script>
-	<script src = formulaire/profils.js></script>
-	<script src = formulaire/particuliers.js></script>
-	<script src = liens.js></script>
-	<script src = liens/batons.js></script>
-	<script src = liens/colliers.js></script>
-	<script src = liens/couronnes.js></script>
-	<script src = liens/drapeaux.js></script>
-	<script src = liens/ecus.js></script>
-	<script src = liens/heaumes.js></script>
-	<script src = liens/manteaux.js></script>
-	<script src = liens/portants.js></script>
+	<meta charset = "utf-8">
+	<link rel = "icon" href = "caracteres/F.png">
+	<link rel = "stylesheet" href = "heraldix.css">
+	<link rel = "stylesheet" href = "formulaire/formulaire.css">
+	<script src = "heraldix.js"></script>
+	<script src = "formulaire/formulaire.js"></script>
+	<script src = "formulaire/profils.js"></script>
+	<script src = "formulaire/particuliers.js"></script>
+	<script src = "liens.js"></script>
+	<script src = "liens/batons.js"></script>
+	<script src = "liens/colliers.js"></script>
+	<script src = "liens/couronnes.js"></script>
+	<script src = "liens/drapeaux.js"></script>
+	<script src = "liens/ecus.js"></script>
+	<script src = "liens/heaumes.js"></script>
+	<script src = "liens/manteaux.js"></script>
+	<script src = "liens/portants.js"></script>
 </head>
-<body onload = initialiser()>
+<body onload = "initialiser()">
 <header>
-	<a href = heraldix.html><img src = heraldix.png class = logo></a>
+	<a href = "heraldix.html"><img src = "heraldix.png" class = "logo"></a>
 	<h1><hr>Formulaire<hr></h1>
-	<a href = formulaire.html><button class = important>Formulaire</button></a><br>
-	<a href = listes.html><button class = important>Listes</button></a>
+	<a href = "formulaire.html"><button class = "important">Formulaire</button></a><br>
+	<a href = "listes.html"><button class = "important">Listes</button></a>
 </header>
 
 <fieldset>
 	<legend>Description héraldique</legend>
-	<form action = armoirie.html>
-		<label class = filtre>Catégorie</label><br>
+	<form action = "armoirie.html">
+		<label class = "filtre">Catégorie</label><br>
 		<select id = select-catégorie></select><br>
-		<img id = img-catégorie><br>
-		<label class = filtre>Profil</label><br>
-		<select id = select-profil></select><br>
-		<label class = filtre>Particulier</label><br>
-		<select id = select-particulier></select><hr>
+		<img id = "img-catégorie"><br>
+		<label class = "filtre">Profil</label><br>
+		<select id = "select-profil"></select><br>
+		<label class = "filtre">Particulier</label><br>
+		<select id = "select-particulier"></select><hr>
 		<label>Écu</label><br>
-		<select name = écu></select><br>
+		<select name = "écu"></select><br>
 		<label>Branche</label>
-		<input type = checkbox id = input-branche></input><br>
-		<div class = caché id = div-branche>
+		<input type = "checkbox" id = "input-branche"></input><br>
+		<div class = "caché" id = "div-branche">
 			<label>Branche</label><br>
-			<input type = text name = branche></select><br>
+			<input type = "text" name = "branche"></select><br>
 		</div>
 		<label>Couronne</label><br>
-		<select name = couronne></select><br>
+		<select name = "couronne"></select><br>
 		<label>Heaume</label><br>
-		<select name = heaume></select><br>
+		<select name = "heaume"></select><br>
 		<label>Portant à dextre</label><br>
-		<select name = portant-dextre></select><br>
+		<select name = "portant-dextre"></select><br>
 		<label>Portant à senestre</label><br>
-		<select name = portant-senestre></select><br>
+		<select name = "portant-senestre"></select><br>
 		<label>Collier</label><br>
-		<select name = collier></select><br>
+		<select name = "collier"></select><br>
 		<label>Manteau</label><br>
-		<select name = manteau id = select-manteau></select><br>
-		<div class = caché id = div-couronne-manteau>
+		<select name = "manteau" id = "select-manteau"></select><br>
+		<div class = "caché" id = "div-couronne-manteau">
 			<label>Couronne du manteau</label><br>
-			<select name = couronne-manteau></select><br>
+			<select name = "couronne-manteau"></select><br>
 		</div>
 		<label>Devise</label><br>
-		<input type = text name = devise><br>
+		<input type = "text" name = "devise"><br>
 		<label>Cri</label><br>
-		<input type = text name = cri><br>
+		<input type = "text" name = "cri"><br>
 		<br>
-		<input type = submit value = Valider class = important>
+		<input type = "submit" value = "Valider" class = "important">
 	</form>
 </fieldset>
 
