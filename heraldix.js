@@ -75,7 +75,7 @@ function caractères() {
 				titre.innerHTML +=
 					"<img src = caracteres/" + caractère + ".png alt = " + caractère + " class = 'caractère haut'>"
 				;
-			} else if (hauts.includes(bas)) {
+			} else if (bas.includes(caractère)) {
 				titre.innerHTML +=
 					"<img src = caracteres/" + caractère + ".png alt = " + caractère + " class = 'caractère bas'>"
 				;
