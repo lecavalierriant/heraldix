@@ -74,8 +74,7 @@ img {border-radius: 0;}
 	height: 63px;
 }
 h2 .caractère {
-	margin-top: 9px;
-	margin-bottom: -1px;
+	margin: 9px 0 -1px 0;
 	height: 30px;
 }
 h2 .haut {
