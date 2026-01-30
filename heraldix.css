@@ -1,26 +1,14 @@
-* {
-	text-align: center;
-	font-family: "garamond";
+button, input, th, td, * {
 	font-size: 25px;
-	color: #ffffff;
 	border-radius: 20px;
-	text-shadow: 0 0 2px #000000;
 }
 
-a {
-	text-decoration: none;
-	font-style: italic;
-}
 a:hover,
 button:hover,
 input:hover,
 select:hover {cursor: url("curseurs/main.png"), pointer;}
 
-body {
-	background-color: #303841;
-	margin: 20px;
-	cursor: url("curseurs/fleche.png"), auto;
-}
+body {cursor: url("curseurs/fleche.png"), auto;}
 
 button,
 input,
@@ -28,9 +16,7 @@ select {
 	background-color: #303841;
 	border: 2px #ffffff solid;
 	padding: 5px;
-	box-shadow: 0 0 2px #000000;
 	transition: ease 0.05s;
-	margin: 2px;
 }
 button:hover,
 input:hover,
@@ -74,10 +60,7 @@ hr {
 	border: 0;
 }
 
-img {
-	filter: drop-shadow(0 0 2px #000000);
-	border-radius: 0;
-}
+img {border-radius: 0;}
 .caractère {
 	margin-top: 15px;
 	height: 50px;
