@@ -21,7 +21,7 @@ select {
 button:hover,
 input:hover,
 select:hover {
-	box-shadow: 0 0 0;
+	box-shadow: none;
 	margin: 2px;
 	border: 2px #e8c869 solid;
 }
@@ -115,7 +115,7 @@ th {display: none;}
 * {
 	font-size: 50px;
 	border-radius: 50px;
-	box-shadow: 0 0 0;
+	box-shadow: none;
 }
 
 button,
