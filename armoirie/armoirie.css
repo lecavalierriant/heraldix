@@ -32,7 +32,7 @@ footer {display: none;}
 	z-index: 10;
 }
 
-span {text-shadow: 0 0 0;}
+span {text-shadow: none;}
 .transformer {
 	background-color: #ffffff;
 	font-family: consolas;
