@@ -17,10 +17,10 @@ drapeaux = {
 	"Royaume-Uni": [
 		Wikipédia + "8/83/Flag_of_the_United_Kingdom_(3-5).svg",
 	],
-	 "Saint-Empire romain germanique": [
+	"Saint-Empire romain germanique": [
 		Wikipédia + "d/dd/Banner_of_the_Holy_Roman_Emperor_with_haloes_(1430-1806).svg",
 	],
-	 "État du Vatican": [
+	"État du Vatican": [
 		Wikipédia + "b/b3/Flag_of_Vatican_City_(2023–present).svg"
 	],
 	"Royaume du Portugal": [
