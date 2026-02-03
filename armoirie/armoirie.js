@@ -27,14 +27,14 @@ images = {
 }
 
 function afficher(nom) {
-	if (nom == "couronne") {colonne = 0;} else
-	if (nom == "heaume") {colonne = 1;} else
-	if (nom == "portant-dextre") {colonne = 2;} else
-	if (nom == "écu") {colonne = 3;} else
-	if (nom == "portant-senestre") {colonne = 4;} else
-	if (nom == "manteau") {colonne = 5;} else
-	if (nom == "couronne-manteau") {colonne = 6;} else
-	if (nom == "collier") {colonne = 7;}
+	if (nom == "couronne") {colonne = 0;}
+	else if (nom == "heaume") {colonne = 1;}
+	else if (nom == "portant-dextre") {colonne = 2;}
+	else if (nom == "écu") {colonne = 3;}
+	else if (nom == "portant-senestre") {colonne = 4;}
+	else if (nom == "manteau") {colonne = 5;}
+	else if (nom == "couronne-manteau") {colonne = 6;}
+	else if (nom == "collier") {colonne = 7;}
 	for (ligne = 0; ligne < lignes; ligne++) {
 		obtenir("td", "S")[colonne + ligne * colonnes].style.display = "table-cell";
 	}
@@ -230,25 +230,25 @@ function redimensionner(image, sens) {
 	if (sens == "←" || sens == "→") {
 		obtenir(image, "I").width += (sens == "→" ? 10 : -10);
 		taille = obtenir(image, "I").width;
-		if (image == "img-couronne") {obtenir("transformer", "C")[0].innerHTML = taille;} else
-		if (image == "img-heaume") {obtenir("transformer", "C")[1].innerHTML = taille;} else
-		if (image == "img-portant-dextre") {obtenir("transformer", "C")[2].innerHTML = taille;} else
-		if (image == "img-écu") {obtenir("transformer", "C")[3].innerHTML = taille;} else
-		if (image == "img-portant-senestre") {obtenir("transformer", "C")[4].innerHTML = taille;} else
-		if (image == "img-manteau") {obtenir("transformer", "C")[5].innerHTML = taille;} else
-		if (image == "img-couronne-manteau") {obtenir("transformer", "C")[6].innerHTML = taille;} else
-		if (image == "img-collier") {obtenir("transformer", "C")[7].innerHTML = taille;}
+		if (image == "img-couronne") {obtenir("transformer", "C")[0].innerHTML = taille;}
+		else if (image == "img-heaume") {obtenir("transformer", "C")[1].innerHTML = taille;}
+		else if (image == "img-portant-dextre") {obtenir("transformer", "C")[2].innerHTML = taille;}
+		else if (image == "img-écu") {obtenir("transformer", "C")[3].innerHTML = taille;}
+		else if (image == "img-portant-senestre") {obtenir("transformer", "C")[4].innerHTML = taille;}
+		else if (image == "img-manteau") {obtenir("transformer", "C")[5].innerHTML = taille;}
+		else if (image == "img-couronne-manteau") {obtenir("transformer", "C")[6].innerHTML = taille;}
+		else if (image == "img-collier") {obtenir("transformer", "C")[7].innerHTML = taille;}
 	} else {
 		obtenir(image, "I").height += (sens == "↑" ? 10 : -10);
 		taille = obtenir(image, "I").height;
-		if (image == "img-couronne") {obtenir("transformer", "C")[colonnes + 0].innerHTML = taille;} else
-		if (image == "img-heaume") {obtenir("transformer", "C")[colonnes + 1].innerHTML = taille;} else
-		if (image == "img-portant-dextre") {obtenir("transformer", "C")[colonnes + 2].innerHTML = taille;} else
-		if (image == "img-écu") {obtenir("transformer", "C")[colonnes + 3].innerHTML = taille;} else
-		if (image == "img-portant-senestre") {obtenir("transformer", "C")[colonnes + 4].innerHTML = taille;} else
-		if (image == "img-manteau") {obtenir("transformer", "C")[colonnes + 5].innerHTML = taille;} else
-		if (image == "img-couronne-manteau") {obtenir("transformer", "C")[colonnes + 6].innerHTML = taille;} else
-		if (image == "img-collier") {obtenir("transformer", "C")[colonnes + 7].innerHTML = taille;}
+		if (image == "img-couronne") {obtenir("transformer", "C")[colonnes + 0].innerHTML = taille;}
+		else if (image == "img-heaume") {obtenir("transformer", "C")[colonnes + 1].innerHTML = taille;}
+		else if (image == "img-portant-dextre") {obtenir("transformer", "C")[colonnes + 2].innerHTML = taille;}
+		else if (image == "img-écu") {obtenir("transformer", "C")[colonnes + 3].innerHTML = taille;}
+		else if (image == "img-portant-senestre") {obtenir("transformer", "C")[colonnes + 4].innerHTML = taille;}
+		else if (image == "img-manteau") {obtenir("transformer", "C")[colonnes + 5].innerHTML = taille;}
+		else if (image == "img-couronne-manteau") {obtenir("transformer", "C")[colonnes + 6].innerHTML = taille;}
+		else if (image == "img-collier") {obtenir("transformer", "C")[colonnes + 7].innerHTML = taille;}
 	}
 }
 
