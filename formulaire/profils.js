@@ -10,7 +10,7 @@ profils = {
 			"collier": ["RF", "Ordres de Saint-Michel et du Saint-Esprit"],
 			"manteau": ["RF", "France"],
 			"couronne-manteau": ["RF", "Roi"],
-			"cri": ["**", "Montjoie ! Saint Denis !"],
+			"cri": ["**", "Montjoie ! Saint Denis !"],
 			"devise": ["**", "Lilia non laborant neque nent"],
 		},
 		"Dauphin": {
@@ -22,7 +22,7 @@ profils = {
 			"collier": ["**", ""],
 			"manteau": ["RF", "France"],
 			"couronne-manteau": ["RF", "Dauphin"],
-			"cri": ["**", "Montjoie ! Saint Denis !"],
+			"cri": ["**", "Montjoie ! Saint Denis !"],
 			"devise": ["**", "Lilia non laborant neque nent"],
 		},
 		"Fils": {
@@ -34,7 +34,7 @@ profils = {
 			"collier": ["**", ""],
 			"manteau": ["RF", "France"],
 			"couronne-manteau": ["RF", "Fils"],
-			"cri": ["**", "Montjoie ! Saint Denis !"],
+			"cri": ["**", "Montjoie ! Saint Denis !"],
 			"devise": ["**", "Lilia non laborant neque nent"],
 		},
 		"Petit-fils": {
@@ -46,7 +46,7 @@ profils = {
 			"collier": ["**", ""],
 			"manteau": ["RF", "France"],
 			"couronne-manteau": ["RF", "Petit-fils"],
-			"cri": ["**", "Montjoie ! Saint Denis !"],
+			"cri": ["**", "Montjoie ! Saint Denis !"],
 			"devise": ["**", "Lilia non laborant neque nent"],
 		},
 		"Prince": {
@@ -58,7 +58,7 @@ profils = {
 			"collier": ["**", ""],
 			"manteau": ["RF", "France"],
 			"couronne-manteau": ["RF", "Prince"],
-			"cri": ["**", "Montjoie ! Saint Denis !"],
+			"cri": ["**", "Montjoie ! Saint Denis !"],
 			"devise": ["**", "Lilia non laborant neque nent"],
 		},
 		"Duc souverain et pair": {
