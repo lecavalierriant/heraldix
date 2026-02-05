@@ -6,7 +6,7 @@ fieldset {
 #img-catégorie {width: 75px;}
 
 input[type = "text"] {width: 250px;}
-input[type = "text"]:hover {cursor: url("../Curseurs/Plume.png"), text;}
+input[type = "text"]:hover {cursor: url("../curseurs/text.png"), text;}
 
 label {font-weight: bold;}
 .filtre {font-style: italic;}
