@@ -47,7 +47,7 @@ particuliers = {
 			"manteau": ["**", ""],
 			"couronne-manteau": ["**", ""],
 			"cri": ["**", ""],
-			"devise": ["**", "Qui s'y frotte, s'y pique !"],
+			"devise": ["**", "Qui s'y frotte, s'y pique !"],
 		},
 	},
 	// "Empire français": {},
