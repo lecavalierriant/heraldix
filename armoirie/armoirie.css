@@ -33,10 +33,6 @@ footer {display: none;}
 }
 
 span {text-shadow: none;}
-.transformer {
-	background-color: #ffffff;
-	font-family: consolas;
-}
 
 @media print {
 
