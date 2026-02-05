@@ -6,9 +6,9 @@ button, input, th, td, * {
 a:hover,
 button:hover,
 input:hover,
-select:hover {cursor: url("curseurs/main.png"), pointer;}
+select:hover {cursor: url("curseurs/pointer.png"), pointer;}
 
-body {cursor: url("curseurs/fleche.png"), auto;}
+body {cursor: url("curseurs/default.png"), auto;}
 
 button,
 input,
@@ -44,7 +44,7 @@ h1 {
 
 h1:hover,
 h2:hover,
-span:hover {cursor: url("curseurs/plume.png"), text;}
+span:hover {cursor: url("curseurs/text.png"), text;}
 
 h2 {
 	font-size: 40px;
