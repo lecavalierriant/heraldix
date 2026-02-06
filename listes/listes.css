@@ -2,10 +2,5 @@ h2:hover {cursor: url("../curseurs/pointer.png"), pointer;}
 
 .icône {width: 50px;}
 
-table,
-th {border: 2px #ffffff solid;}
-
 td,
 th {display: table-cell;}
-.vide {background-color: grey;}
-.vide:hover {cursor: not-allowed;}
