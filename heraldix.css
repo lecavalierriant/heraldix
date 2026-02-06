@@ -1,8 +1,3 @@
-button, input, th, td, * {
-	font-size: 25px;
-	border-radius: 20px;
-}
-
 a:hover,
 button:hover,
 input:hover,
@@ -12,19 +7,7 @@ body {cursor: url("curseurs/default.png"), auto;}
 
 button,
 input,
-select {
-	background-color: #303841;
-	border: 2px #ffffff solid;
-	padding: 5px;
-	transition: ease 0.05s;
-}
-button:hover,
-input:hover,
-select:hover {
-	box-shadow: none;
-	margin: 2px;
-	border: 2px #e8c869 solid;
-}
+select {background-color: #303841;}
 
 div {justify-content: center;}
 .flex {display: flex;}
@@ -36,7 +19,6 @@ div {justify-content: center;}
 fieldset {border: 2px solid #e8c869;}
 
 h1 {
-	font-size: 60px;
 	margin-right: 200px;
 	margin-left: 200px;
 	color: #e8c869
@@ -47,14 +29,12 @@ h2:hover,
 span:hover {cursor: url("curseurs/text.png"), text;}
 
 h2 {
-	font-size: 40px;
 	margin-right: 300px;
 	margin-left: 300px;
 	color: #e8c869
 }
 
 hr {
-	box-shadow: 0 0 2px #000000;
 	height: 2px;
 	background-color: #e8c869;
 	border: 0;
@@ -93,18 +73,17 @@ h2 .bas {
 
 span {
 	font-family: gabriola;
+	font-style: italic;
 	font-size: 30px;
 	color: #000000;
 }
 
-td,
-th {display: none;}
+table {display: none;}
 
 .caché {display: none;}
 
 .important {
 	position: sticky;
-	bottom: 10px;
 	padding: 25px;
 	background-color: #005500;
 }
@@ -146,8 +125,6 @@ h2 {
 
 hr {height: 4px;}
 
-/*.caractère {width: 90px;}*/
-/*.caractère {width: 50px;}*/
 .logo {width: 300px;}
 
 .important {
