@@ -36,10 +36,8 @@ span {text-shadow: none;}
 
 @media print {
 
-body {width: 1000px;}
-
 footer {display: block;}
 
-header {display: none;}
+#aaa {display: none;}
 
 }
