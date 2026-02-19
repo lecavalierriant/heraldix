@@ -322,10 +322,6 @@ function remplir() {
 	tableParamètres.insertRow().insertCell(0).outerHTML = ligne;
 }
 
-function sauvegarder() {
-	window.print();
-}
-
 function titrer() {
 	/*
 	[ ] Le titre peut être X, (titre) de Y ---> BRANCHES
@@ -335,16 +331,13 @@ function titrer() {
 	intérieur = "";
 	if (couronne) {
 		if (couronneManteau) {
-			if (couronne == couronneManteau) {
-				intérieur += concordance(couronne.slice(3), false);
-			} else {
+			if (couronne == couronneManteau) {intérieur += concordance(couronne.slice(3), false);}
+			else {
 				intérieur +=
 					concordance(couronne.slice(3), false) + " & " + concordance(couronneManteau.slice(3), true)
 				;
 			}
-		} else {
-			intérieur += concordance(couronne.slice(3), false);
-		}
+		} else {intérieur += concordance(couronne.slice(3), false);}
 	}
 	if (écu) {intérieur += concordance(écu.slice(3), false);}
 	if (branche) {intérieur += " " + branche}
@@ -354,7 +347,7 @@ function titrer() {
 }
 
 function concordance(mot, article) {
-	voyelles = [
+	élision = [
 		"A", "À", "Á", "Â", "Ä",
 		"Æ",
 		"E", "È", "É", "Ê", "Ë",
@@ -364,15 +357,10 @@ function concordance(mot, article) {
 		"U", "Ù", "Ú", "Û", "Ü",
 		"Y", "Ỳ", "Ý", "Ŷ", "Ÿ",
 	];
-	if (voyelles.includes(mot[0])) {
-		return article ? mot : " d'" + mot; // H muets...
-	} else {
-		if (mot.split(" ")[0] == "Le") {
-			return article ? mot.slice(3) : " du " + mot.slice(3);
-		} else if (mot.split(" ")[0] == "Les") {
-			return article ? mot.slice(4) : " des " + mot.slice(4);
-		} else {
-			return article ? mot : " de " + mot;
-		}
+	if (élision.includes(mot[0])) {return article ? mot : " d'" + mot;}
+	else {
+		if (mot.split(" ")[0] == "Le") {return article ? mot.slice(3) : " du " + mot.slice(3);}
+		else if (mot.split(" ")[0] == "Les") {return article ? mot.slice(4) : " des " + mot.slice(4);}
+		else {return article ? mot : " de " + mot;}
 	}
 }
