@@ -33,8 +33,6 @@ function obtenir(identifiant, type) {
 		return document.getElementById(identifiant);
 	} else if (type == "C") {
 		return document.getElementsByClassName(identifiant);
-	} else if (type == "N") {
-		return document.getElementsByName(identifiant);
 	} else if (type == "S") {
 		return document.querySelectorAll(identifiant);
 	} else if (type == "N") {
@@ -73,28 +71,53 @@ function caractères() {
 		"Le": "du",
 		"Les": "des",
 	};
+	basDroite = [
+		"F",
+		"P",
+		"T",
+		"V",
+		"W",
+		"Y",
+	];
+	basGauche = [
+		"T",
+		"V",
+		"W",
+		"Y",
+	];
+	hautDroite = [
+		"A", "À", "Á", "Â", "Ä", "Æ",
+		"L",
+		"M",
+	];
+	hautGauche = [
+		"A", "À", "Á", "Â", "Ä", "Æ",
+		"J",
+		"M",
+	];
 	for (titre of obtenir("h1", "S")) {
-		texte = titre.innerText;
+		texte = titre.innerText.toUpperCase();
 		titre.innerHTML = "<hr>";
 		compte = 0;
-		for (caractère of texte.toUpperCase()) {
+		libreBasDroite = false;
+		libreHautDroite = false;
+		for (caractère of texte) {
 			compte++;
-			contenu = "";
 			if (caractère == " ") {
 				if (compte > 14) {
 					titre.innerHTML += "<br>";
 					compte = 0;
 				} else {titre.innerHTML += " ";}
 				continue;
-			} else if (Object.keys(spéciaux).includes(caractère)) {
-				contenu += "<img src = caracteres/speciaux/" + spéciaux[caractère] + ".png alt = &" + spéciaux[caractère] + ";";
-			} else {
-				contenu += "<img src = caracteres/" + caractère + ".png alt = " + caractère;
 			}
-			if (hauts.includes(caractère)) {contenu += " class = 'caractère haut'>";}
-			else if (bas.includes(caractère)) {contenu += " class = 'caractère bas'>";}
-			else {contenu += " class = caractère>";}
-			titre.innerHTML += contenu;
+			estSpecial = spéciaux[caractère];
+			classes = ["caractère"];
+			if (hauts.includes(caractère)) classes.push("haut");
+			else if (bas.includes(caractère)) classes.push("bas");
+			if ((libreBasDroite && hautGauche.includes(caractère)) || (libreHautDroite && basGauche.includes(caractère))) {classes.push("décalage-gauche");}
+			libreHautDroite = hautDroite.includes(caractère);
+			libreBasDroite = basDroite.includes(caractère);
+			titre.innerHTML += `<img src = caracteres/${estSpecial ? `speciaux/${estSpecial}` : `/${caractère}`}.png alt = ${estSpecial ? `&${estSpecial};` : caractère} class = "${classes.join(' ')}">`;
 		}
 		titre.innerHTML += "<hr>";
 	}
