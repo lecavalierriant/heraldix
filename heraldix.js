@@ -43,13 +43,17 @@ function obtenir(identifiant, type) {
 function caractères() {
 	hauts = [
 		"À", "Á", "Â", "Ä",
-		"È", "É", "Ê", "Ë",
+		"Č",
+		"Ď",
+		"È", "É", "Ê", "Ë", "Ě",
 		"Ì", "Í", "Î", "Ï",
 		"Ñ",
 		"Ò", "Ó", "Ô", "Ö",
+		"Ř",
+		"Š",
 		"Ù", "Ú", "Û", "Ü",
 		"Ỳ", "Ý", "Ŷ", "Ÿ",
-		"'", "˘", "´", "˙", "`", "^", "¨",
+		"'", "˘", "´", "˙", "`", "ˇ", "^", "¯", "¨",
 	];
 	bas = ["Ç", "Q", ",", ";"];
 	spéciaux = {
@@ -61,9 +65,12 @@ function caractères() {
 		"´": "DiacriticalAcute",
 		"˙": "DiacriticalDot",
 		"`": "DiacriticalGrave",
+		"ˇ": "Hacek",
 		"^": "Hat",
 		".": "period",
 		";": "semi",
+		"/": "sol",
+		"¯": "strns",
 		"¨": "uml",
 	}
 	articles = {
