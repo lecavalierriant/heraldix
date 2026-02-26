@@ -9,7 +9,7 @@ tableaux = {
 	"Colliers": ["table-colliers", colliers, 2],
 	"Bâtons": ["table-bâtons", bâtons, 2],
 	"Devises": ["table-devises", /*devises,*/ 1],
-	"Cris": ["table-cris", /*cri,*/ 1],
+	"Cris": ["table-cris", /*cris,*/ 1],
 };
 
 function afficher(titre) {
