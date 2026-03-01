@@ -85,12 +85,14 @@ function caractères() {
 		"V",
 		"W",
 		"Y",
+		"7",
 	];
 	basGauche = [
 		"T",
 		"V",
 		"W",
 		"Y",
+		"4",
 	];
 	hautDroite = [
 		"A", "À", "Á", "Â", "Ä", "Æ",
