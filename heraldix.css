@@ -21,7 +21,6 @@ fieldset {border: 2px solid #e8c869;}
 h1 {
 	margin-right: 200px;
 	margin-left: 200px;
-	color: #e8c869
 }
 
 h1:hover,
@@ -31,7 +30,6 @@ span:hover {cursor: url("curseurs/text.png"), text;}
 h2 {
 	margin-right: 300px;
 	margin-left: 300px;
-	color: #e8c869
 }
 
 hr {
