@@ -323,11 +323,6 @@ function remplir() {
 }
 
 function titrer() {
-	/*
-	[ ] Le titre peut être X, (titre) de Y ---> BRANCHES
-		de Maupeou(, comte) d'Ableiges
-		Le Gonidec(, seigneur) de Traissan
-	*/
 	intérieur = "";
 	if (couronne) {
 		if (couronneManteau) {
