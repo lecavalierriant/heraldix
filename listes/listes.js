@@ -8,8 +8,8 @@ tableaux = {
 	"Manteaux": ["table-manteaux", manteaux, 4],
 	"Colliers": ["table-colliers", colliers, 2],
 	"Bâtons": ["table-bâtons", bâtons, 2],
-	"Devises": ["table-devises", /*devises,*/ 1],
-	"Cris": ["table-cris", /*cris,*/ 1],
+	"Devises": ["table-devises", 1],
+	"Cris": ["table-cris", 1],
 };
 
 function afficher(titre) {
