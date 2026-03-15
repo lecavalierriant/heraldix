@@ -13,23 +13,9 @@ tableaux = {
 };
 
 function afficher(titre) {
-	complets = {
-		"rofils": "Profils",
-		"ouronnes": "Couronnes",
-		"eaumes": "Heaumes",
-		"articuliers": "Particuliers",
-		"cus": "Écus",
-		"ortants": "Portants",
-		"anteaux": "Manteaux",
-		"olliers": "Colliers",
-		"âtons": "Bâtons",
-	};
-	titre = complets[titre.innerText];
-	if (obtenir(tableaux[titre][0], "I").style.display == "table") {
-		obtenir(tableaux[titre][0], "I").style.display = "none";
-	} else {
-		obtenir(tableaux[titre][0], "I").style.display = "table";
-	}
+	tableau = obtenir(tableaux[titre][0], "I").style;
+	if (tableau.display == "table") {tableau.display = "none";}
+	else {tableau.display = "table";}
 }
 
 function initialiser() {
