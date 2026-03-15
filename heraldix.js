@@ -104,7 +104,7 @@ function caractères() {
 		"J",
 		"M",
 	];
-	for (titre of obtenir("h1", "S")) {
+	for (titre of obtenir("h1, h2", "S")) {
 		texte = titre.innerText.toUpperCase();
 		titre.innerHTML = "<hr>";
 		compte = 0;
