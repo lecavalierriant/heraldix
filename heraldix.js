@@ -82,6 +82,13 @@ function caractères() {
 		"Y",
 		"7",
 	];
+	rondBasDroite = [
+		"D",
+		"O", "Ò", "Ó", "Ô", "Ö", "Ø",
+		"Q",
+		"0",
+		"9",
+	];
 	basGauche = [
 		"T",
 		"V",
@@ -89,15 +96,36 @@ function caractères() {
 		"Y",
 		"4",
 	];
+	rondBasGauche = [
+		"C", "Ç",
+		"G",
+		"O", "Ò", "Ó", "Ô", "Ö", "Œ",
+		"Q",
+		"0",
+	];
 	hautDroite = [
-		"A", "À", "Á", "Â", "Ä", "Æ",
+		"A", "À", "Á", "Â", "Ä",
 		"L",
 		"M",
+	];
+	rondHautDroite = [
+		"D",
+		"O", "Ò", "Ó", "Ô", "Ö",
+		"Q",
+		"0",
 	];
 	hautGauche = [
 		"A", "À", "Á", "Â", "Ä", "Æ",
 		"J",
 		"M",
+	];
+	rondHautGauche = [
+		"C", "Ç",
+		"G",
+		"O", "Ò", "Ó", "Ô", "Ö", "Ø", "Œ",
+		"Q",
+		"0",
+		"6",
 	];
 	for (titre of obtenir("h1, h2", "S")) {
 		texte = titre.innerText.toUpperCase();
@@ -105,6 +133,8 @@ function caractères() {
 		compte = 0;
 		libreBasDroite = false;
 		libreHautDroite = false;
+		libreRondBasDroite = false;
+		libreRondHautDroite = false;
 		for (caractère of texte) {
 			compte++;
 			if (caractère == " ") {
@@ -114,14 +144,18 @@ function caractères() {
 				} else {titre.innerHTML += " ";}
 				continue;
 			}
-			estSpecial = spéciaux[caractère];
 			classes = ["caractère"];
 			if (hauts.includes(caractère)) classes.push("haut");
 			else if (bas.includes(caractère)) classes.push("bas");
 			if ((libreBasDroite && hautGauche.includes(caractère)) || (libreHautDroite && basGauche.includes(caractère))) {classes.push("décalage-gauche");}
+			if ((libreBasDroite && rondHautGauche.includes(caractère)) || (libreHautDroite && rondBasGauche.includes(caractère))) {classes.push("petit-décalage-gauche");}
+			if ((libreRondBasDroite && hautGauche.includes(caractère)) || (libreRondHautDroite && basGauche.includes(caractère))) {classes.push("petit-décalage-gauche");}
 			libreHautDroite = hautDroite.includes(caractère);
 			libreBasDroite = basDroite.includes(caractère);
-			titre.innerHTML += `<img src = caracteres/${estSpecial ? `speciaux/${estSpecial}` : `/${caractère}`}.png alt = ${estSpecial ? `&${estSpecial};` : caractère} class = "${classes.join(' ')}">`;
+			libreRondHautDroite = rondHautDroite.includes(caractère);
+			libreRondBasDroite = rondBasDroite.includes(caractère);
+			spécial = spéciaux[caractère];
+			titre.innerHTML += `<img src = caracteres/${spécial ? `speciaux/${spécial}` : `${caractère}`}.png alt = ${spécial ? `&${spécial};` : caractère} class = "${classes.join(' ')}">`;
 		}
 		titre.innerHTML += "<hr>";
 	}
