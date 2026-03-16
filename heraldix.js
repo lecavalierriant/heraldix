@@ -29,15 +29,10 @@ catégories = {
 }
 
 function obtenir(identifiant, type) {
-	if (type == "I") {
-		return document.getElementById(identifiant);
-	} else if (type == "C") {
-		return document.getElementsByClassName(identifiant);
-	} else if (type == "S") {
-		return document.querySelectorAll(identifiant);
-	} else if (type == "N") {
-		return document.getElementsByName(identifiant);
-	}
+	if (type == "I") {return document.getElementById(identifiant);}
+	else if (type == "C") {return document.getElementsByClassName(identifiant);}
+	else if (type == "S") {return document.querySelectorAll(identifiant);}
+	else if (type == "N") {return document.getElementsByName(identifiant);}
 }
 
 function caractères() {
