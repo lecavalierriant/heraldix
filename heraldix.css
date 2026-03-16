@@ -68,6 +68,8 @@ h2 .bas {
 	border-radius: 40px;
 }
 .logo:hover {border: 2px solid #e8c869;}
+.décalage-gauche {margin-left: -10px;}
+.petit-décalage-gauche {margin-left: -5px;}
 
 span {
 	font-family: gabriola;
@@ -129,7 +131,5 @@ hr {height: 4px;}
 	bottom: 50px;
 	padding: 50px;
 }
-
-.décalage-gauche {margin-left: -10px;}
 
 }
