@@ -1,5 +1,4 @@
 profils = {
-	// "**": {},
 	"Royaume de France": {
 		"Roi": {
 			"écu": ["RF", "France"],
@@ -217,12 +216,6 @@ profils = {
 			"cri": ["**", ""],
 			"devise": ["**", ""],
 		},
-		// "Gentilhomme d'ancienne race": {},
-		// "Banneret": {},
-		// "Chevalier": {},
-		// "Gentilhomme de trois races": {},
-		// "Anobli": {},
-		// "Bâtard": {},
 	},
 	"Empire français": {
 		"Empereur 1804": {
@@ -249,13 +242,6 @@ profils = {
 			"cri": ["**", ""],
 			"devise": ["**", ""],
 		},
-		// "Prince souverain": {},
-		// "Prince": {},
-		// "Duc": {},
-		// "Comte": {},
-		// "Baron": {},
-		// "Chevalier": {},
-		// "Grand dignitaire": {},
 	},
 	"Villes françaises": {
 		"Capitale": {
@@ -270,8 +256,6 @@ profils = {
 			"cri": ["**", ""],
 			"devise": ["**", "Fluctuat nec mergitur"],
 		},
-		// "Chef-lieu": {},
-		// "Commune": {},
 	},
 	"Royaume d'Espagne": {
 		"Roi": {
@@ -312,13 +296,6 @@ profils = {
 			"cri": ["**", ""],
 			"devise": ["**", "Dieu et mon droit"],
 		},
-		// "Duc": {},
-		// "Marquis": {},
-		// "Comte": {},
-		// "Vicomte": {},
-		// "Baron": {},
-		// "Baronnet": {},
-		// "Gentilhomme": {},
 	},
 	"Saint-Empire romain germanique": {
 		"Empereur": {
