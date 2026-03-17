@@ -24,7 +24,6 @@ colliers = {
 			"armoirie/colliers/EF Ordre de la Légion d'honneur.svg",
 		],
 	},
-	// "Villes françaises": {},
 	"Royaume d'Espagne": {
 		"Ordre de la Toison d'or": [
 			Wikipédia + "a/a8/Golden_Fleece_Collar_(Knight).svg",
@@ -35,10 +34,4 @@ colliers = {
 			Wikipédia + "e/e8/Garter_of_the_Most_Noble_Order_of_the_Garter.png",
 		],
 	},
-	// "Saint-Empire romain germanique": {},
-	// "État du Vatican": {},
-	// "Royaume du Portugal": {},
-	// "Grand-Duché de Luxembourg": {},
-	// "Royaume de Suède": {},
-	// "Royaume de Jérusalem": {},
 }
