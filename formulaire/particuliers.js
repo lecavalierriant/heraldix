@@ -1,5 +1,4 @@
 particuliers = {
-	// "**": {},
 	"Royaume de France": {
 		"Duc de Bretagne": {
 			"écu": ["RF", "Bretagne"],
@@ -50,10 +49,6 @@ particuliers = {
 			"devise": ["**", "Qui s'y frotte, s'y pique !"],
 		},
 	},
-	// "Empire français": {},
-	// "Villes françaises": {},
-	// "Royaume d'Espagne": {},
-	// "Royaume-Uni": {},
 	"Saint-Empire romain germanique": {
 		"Prince de Broglie": {
 			"écu": ["ER", "Broglie"],
@@ -68,9 +63,4 @@ particuliers = {
 			"devise": ["**", "Pour l'avenir."],
 		},
 	},
-	// "État du Vatican": {},
-	// "Royaume du Portugal": {},
-	// "Grand-Duché de Luxembourg": {},
-	// "Royaume de Suède": {},
-	// "Royaume de Jérusalem": {},
 };
