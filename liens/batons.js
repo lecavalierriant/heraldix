@@ -1,5 +1,4 @@
 bâtons = {
-	// "**": {},
 	"Royaume de France": {
 		"Grand maître": [
 			Wikipédia + "a/a4/Orn_ext_Grand_Maitre_de_France.svg",
@@ -17,13 +16,4 @@ bâtons = {
 			"https://static.wikia.nocookie.net/aigles-et-lys/images/2/29/Bâtons_de_maréchal_(Premier_Empire).svg/revision/latest?cb=20160730160242&path-prefix=fr",
 		],
 	},
-	// "Villes françaises": {},
-	// "Royaume d'Espagne": {},
-	// "Royaume-Uni": {},
-	// "Saint-Empire romain germanique": {},
-	// "État du Vatican": {},
-	// "Royaume du Portugal": {},
-	// "Grand-Duché de Luxembourg": {},
-	// "Royaume de Suède": {},
-	// "Royaume de Jérusalem": {},
 }
