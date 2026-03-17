@@ -1,5 +1,4 @@
 écus = {
-	// "**": {},
 	"Royaume de France": {
 		"France": [
 			Wikipédia + "c/c0/BlasonIledeFranceUnofficiel.svg",
@@ -71,7 +70,6 @@
 			Wikipédia + "5/5b/Blason_maison_fr_de_Montmorency-Laval.svg",
 			Wikipédia + "b/b1/Blason_maison_fr_de_Montmorency_(ancien).svg",
 			Wikipédia + "c/cc/Blason_Thibaut_de_Montmorency.svg",
-			// Dieu aide au premier baron chrétien.
 		],
 		"Navarre": [
 			Wikipédia + "1/17/Blason_Royaume_Navarre.svg",
