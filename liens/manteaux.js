@@ -20,9 +20,6 @@ manteaux = {
 			"armoirie/manteaux/EF Empire B.svg",
 		],
 	},
-	// "Villes françaises": {},
-	// "Royaume d'Espagne": {},
-	// "Royaume-Uni": {},
 	"Saint-Empire romain germanique": {
 		"Aigle": [
 			"armoirie/manteaux/ER Aigle.svg",
@@ -31,9 +28,4 @@ manteaux = {
 			Wikipédia + "1/1d/Héraldique_meuble_Aigle_bicéphale_éploye.svg",
 		],
 	},
-	// "État du Vatican": {},
-	// "Royaume du Portugal": {},
-	// "Grand-Duché de Luxembourg": {},
-	// "Royaume de Suède": {},
-	// "Royaume de Jérusalem": {},
 }
