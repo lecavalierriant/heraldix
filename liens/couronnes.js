@@ -1,5 +1,4 @@
 couronnes = {
-	// "**": {},
 	"Royaume de France": {
 		"Roi": [
 			Wikipédia + "1/1c/Royal_Crown_of_France_(accurate_red_bonnet).svg",
@@ -95,7 +94,6 @@ couronnes = {
 			Creazilla + "7830866/french-crown-clipart-xl.png",
 			Wikipédia + "9/92/Rangkronen-Fig._30.svg",
 		],
-		// "Gentilhomme d'ancienne race": [],
 		"Banneret": [
 			Wikipédia + "3/31/Crown_of_a_Chevalier_of_France.svg",
 			Creazilla + "7830867/french-crown-clipart-xl.png",
@@ -105,9 +103,6 @@ couronnes = {
 		"Chevalier": [
 			Wikipédia + "6/6d/Torse_of_a_Chevalier_of_France.svg",
 		],
-		// "Gentilhomme de trois races": [],
-		// "Anobli": [],
-		// "Bâtard": [],
 	},
 	"Empire français": {
 		"Empereur 1804": [
@@ -187,8 +182,6 @@ couronnes = {
 			Wikipédia + "9/91/Heraldic_Crown_of_Spanish_Lords.svg",
 			Creazilla + "7830828/crown-clipart-xl.png",
 		],
-			// Wikipédia + "6/69/Heraldic_Crown_of_Hispanic_Hidalgos.svg",
-			// Wikipédia + "e/ed/Heraldic_Crown_of_a_Spanish_King_of_Arms.svg",
 	},
 	"Villes espagnoles": {
 		"Commune": [
@@ -216,7 +209,6 @@ couronnes = {
 		"Baron": [
 			Wikipédia + "5/57/Coronet_of_a_British_Baron.svg",
 		],
-		// "Baronnet": [],
 		"Gentilhomme": [
 			Wikipédia + "b/bf/Torse_of_a_British_Gentleman.svg",
 		],
