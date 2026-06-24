@@ -39,37 +39,12 @@ hr {
 }
 
 img {border-radius: 0;}
-.caractère {
-	margin-top: 15px;
-	height: 50px;
-}
-.haut {
-	margin-top: 0;
-	height: 63px;
-}
-.bas {
-	margin-bottom: -12.5px;
-	height: 63px;
-}
-h2 .caractère {
-	margin: 9px 0 -1px 0;
-	height: 30px;
-}
-h2 .haut {
-	height: 37.8px;
-}
-h2 .bas {
-	margin-bottom: -7.5px;
-	height: 37.8px;
-}
 .logo {
 	width: 200px;
 	border: 2px solid #ffffff;
 	border-radius: 40px;
 }
 .logo:hover {border: 2px solid #e8c869;}
-.décalage-gauche {margin-left: -10px;}
-.petit-décalage-gauche {margin-left: -5px;}
 
 span {
 	font-family: gabriola;
