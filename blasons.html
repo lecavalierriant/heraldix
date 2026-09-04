@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang = "fr">
+<head>
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" href = "https://lecavalierriant.github.io/lecavalierriant/lecavalierriant.css">
+	<style>
+		button {font-size: 20px;}
+		div[class]:not(.corps) {display: none;}
+		#tous {display: none;}
+		img {
+			width: 75px;
+			height: 87.5px;
+			border-radius: 0;
+		}
+		#description {font-size: 25px}
+		#description span {display: inline;}
+		span {display: none;}
+	</style>
+	<script>
+		function filtre(élément, classe) {
+			if (description.innerHTML == "") {
+				tous.style.display = "block";
+				tous.animate(
+					[
+						{outline: "2px dotted red;"},
+						{outline: "2px dotted transparent"}
+					],
+					{duration: 3000}
+				);
+			}
+			description.innerHTML += élément.innerHTML + " ";
+			for (aaa of document.querySelectorAll(classes(élément) + classe)) {
+				aaa.style.display = "inline-block";
+				aaa.animate(
+					[
+						{outline: "2px dotted red"},
+						{outline: "2px dotted transparent"}
+					],
+					{duration: 3000}
+				);
+			}
+			masquer(élément);
+		}
+		function classes(élément) {
+			let classes = [];
+			let elementActuel = élément;
+			while (elementActuel) {
+				if (elementActuel.className) {classes.unshift("." + elementActuel.className + " > ");}
+				elementActuel = elementActuel.parentElement;
+			}
+			return classes.join("");
+		}
+		function masquer(bouton) {
+			// const boutons = bouton.parentElement.children;
+			// Array.from(boutons).forEach(
+			// 	élément => {
+			// 		if (élément != bouton) {
+			// 			élément.style.display = "none";
+			// 		}
+			// 	}
+			// );
+		}
+	</script>
+	<title>Blasons</title>
+</head>
+<body>
+
+<h1>Blasons</h1>
+
+<div class = "corps" id = "blasons">
+	<div class = "or">
+		<img src = "https://upload.wikimedia.org/wikipedia/commons/e/e8/Blason_imaginaire_de_Guiron_le_Courtois.svg">
+	</div>
+	<div class = "argent">
+		<img src = "https://upload.wikimedia.org/wikipedia/commons/7/76/Coat_of_arms_of_Stewards_of_Gondor.svg">
+		<div class = "fasce">
+			<div class = "sable">
+				<img src = "https://data.man8rove.com/images/arms/full/bzjlolghp-0.png">
+			</div>
+		</div>
+		<div class = "deux-fasces">
+			<div class = "gueules">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/b/be/Blason_de_la_famille_du_Campe_de_Rosamel.svg">
+			</div>
+			<div class = "sable">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/d/d4/Arms_of_Upper-Isenburg.svg">
+			</div>
+			<div class = "chef">
+				<div class = "trois-roses">
+					<div class = "sable">
+						<!-- <img src = "https://dechav.pages-perso.free.fr/armorial/png/Chavagnac_origine.png"> -->
+						<img src = "local/Origine - XIIIe.png">
+					</div>
+				</div>
+				<div class = "azur">
+					<div class = "trois-roses">
+						<div class = "or">
+							<!-- <img src = "https://dechav.pages-perso.free.fr/armorial/png/Chavagnac_de_Champagne.png"> -->
+							<img src = "local/Champagne - XVe.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "trois-fasces">
+			<div class = "azur">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/9/98/Blason_de_la_famille_de_Baudry_d%27Asson.svg">
+			</div>
+		</div>
+		<div class = "trois-bandes">
+			<div class = "azur">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/3/3e/Blason_de_la_famille_Le_Gonidec.svg">
+			</div>
+		</div>
+		<div class = "bordure">
+			<div class = "gueules">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/0/08/Blason_M%C3%A9raugis_de_Port_les_Guez.svg">
+			</div>
+		</div>
+	</div>
+	<div class = "azur">
+		<img src = "https://upload.wikimedia.org/wikipedia/commons/a/a0/Azure_Heraldic_Shield.svg">
+		<div class = "trois-bandes">
+			<div class = "or">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/4/4a/Blason_de_la_famille_de_Lupp%C3%A9.svg">
+			</div>
+		</div>
+		<div class = "croix">
+			<div class = "argent">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/3/3e/Arms_of_Embrun.svg">
+			</div>
+		</div>
+		<div class = "semé-lys">
+			<div class = "or">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/d/d6/Arms_of_the_Kings_of_France_%28France_Ancien%29.svg">
+				<div class = "bordure">
+					<div class = "componée">
+						<div class = "argent-gueules">
+							<img src = "https://upload.wikimedia.org/wikipedia/commons/9/93/Arms_of_Charles_le_Bel.svg">
+						</div>
+					</div>
+					<div class = "gueules">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/3/32/Arms_of_Philippe_de_Valois.svg">
+						<div class = "huit-besants">
+							<div class = "argent">
+								<img src = "https://upload.wikimedia.org/wikipedia/commons/3/3d/Arms_of_Pierre_dAlencon.svg">
+							</div>
+						</div>
+					</div>
+					<div class = "engrelée">
+						<div class = "gueules">
+							<img src = "https://upload.wikimedia.org/wikipedia/commons/6/6f/Arms_of_Jean_de_Berry.svg">
+						</div>
+					</div>
+				</div>
+				<div class = "bande">
+					<div class = "gueules">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/a/ac/Arms_of_Robert_de_Clermont.svg">
+					</div>
+					<div class = "componée">
+						<div class = "argent-gueules">
+							<img src = "https://upload.wikimedia.org/wikipedia/commons/1/15/Arms_of_Louis_dEvereux.svg">
+						</div>
+					</div>
+					<div class = "bordure">
+						<div class = "gueules">
+							<img src = "https://wappenwiki.org/images/f/f0/Bourbon-Preaux.svg">
+						</div>
+					</div>
+				</div>
+				<div class = "lambel">
+					<div class = "gueules">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/e/e1/Arms_of_Jean_dAnjou.svg">
+						<div class = "bordure">
+							<div class = "componée">
+								<div class = "argent-gueules">
+									<img src = "https://upload.wikimedia.org/wikipedia/commons/6/6a/Arms_of_Jean_de_Durazzo.svg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class = "argent">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/d/d7/Arms_of_Louis_dOrl%C3%A9ans.svg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "trois-lys">
+			<div class = "or">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/c/c0/BlasonIledeFranceUnofficiel.svg">
+				<div class = "lambel">
+					<div class = "argent">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/0/0b/Arms_of_the_House_of_Orl%C3%A9ans.svg">
+					</div>
+					<div class = "gueules">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/4/45/Arms_of_Alexandre_d%27Anjou.svg">
+					</div>
+				</div>
+				<div class = "bordure">
+					<div class = "gueules">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/6/6c/Arms_of_Hercule_dAnjou.svg">
+						<div class = "huit-besants">
+							<div class = "argent">
+								<img src = "https://upload.wikimedia.org/wikipedia/commons/6/6a/Arms_of_Jean_dAlencon.svg">
+							</div>
+						</div>
+						<div class = "huit-coquilles">
+							<div class = "argent">
+								<img src = "https://upload.wikimedia.org/wikipedia/commons/e/e7/Lesser_Arms_of_Bourbon-Parma.svg">
+							</div>
+						</div>
+					</div>
+					<div class = "endentée">
+						<div class = "gueules">
+							<img src = "https://upload.wikimedia.org/wikipedia/commons/a/a8/Arms_of_Louis_de_Provence.svg">
+						</div>
+					</div>
+					<div class = "crénelée">
+						<div class = "gueules">
+							<img src = "https://upload.wikimedia.org/wikipedia/commons/d/df/Arms_of_Charles_dArtois.svg">
+						</div>
+					</div>
+					<div class = "engrelée">
+						<div class = "gueules">
+							<img src = "https://upload.wikimedia.org/wikipedia/commons/5/5d/Arms_of_Charles_de_Berry.svg">
+						</div>
+						<div class = "componée">
+							<div class = "argent-gueules">
+								<img src = "https://upload.wikimedia.org/wikipedia/commons/3/3f/Arms_of_Jean_de_Tourraine.svg">
+							</div>
+						</div>
+					</div>
+					<div class = "componée">
+						<div class = "argent-gueules">
+							<img src = "https://upload.wikimedia.org/wikipedia/commons/0/0c/Armoiries_duc_de_Touraine_moderne.svg">
+						</div>
+					</div>
+				</div>
+				<div class = "bande">
+					<div class = "gueules">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/6/62/Arms_of_Charles_de_Bourbon.svg">
+					</div>
+					<div class = "componée">
+						<div class = "argent-gueules">
+							<img src = "https://upload.wikimedia.org/wikipedia/commons/e/e3/Arms_of_Michel_dEvreux.svg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "gueules">
+		<img src = "https://upload.wikimedia.org/wikipedia/commons/2/29/Blason_Vide_2D.svg">
+		<div class = "bande">
+			<div class = "or">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/2/2a/Arms_of_the_House_of_Noailles.svg">
+			</div>
+		</div>
+		<div class = "croix">
+			<div class = "argent">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/c/ca/Arms_of_the_House_of_Savoy.svg">
+				<div class = "bande">
+					<div class = "azur">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/3/34/Arms_of_the_House_of_Savoy-Achaea.svg">
+					</div>
+					<div class = "componée">
+						<div class = "or-azur">
+							<img src = "https://upload.wikimedia.org/wikipedia/commons/b/be/Arms_of_the_House_of_Savoy-Vaud.svg">
+						</div>
+					</div>
+					<div class = "endentée">
+						<div class = "azur">
+							<img src = "https://upload.wikimedia.org/wikipedia/commons/b/ba/Arms_of_Janus_of_Savoy.svg">
+						</div>
+					</div>
+				</div>
+				<div class = "bordure">
+					<div class = "azur">
+						<div class = "huit-besants">
+							<div class = "argent">
+								<img src = "https://upload.wikimedia.org/wikipedia/commons/0/01/Arms_of_Jacques_of_Savoy.svg">
+							</div>
+						</div>
+					</div>
+					<div class = "componée">
+						<div class = "or-azur">
+							<img src = "https://upload.wikimedia.org/wikipedia/commons/2/2d/Ancient_arms_of_the_House_of_Savoy-Nemours.svg">
+						</div>
+						<div class = "argent-gueules">
+							<img src = "https://upload.wikimedia.org/wikipedia/commons/3/3f/Arms_of_the_House_of_Savoy-Genova.svg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "sinople">
+		<img src = "https://upload.wikimedia.org/wikipedia/commons/0/0c/Blason_M%C3%A9liadus_de_L%C3%A9onois.svg">
+	</div>
+	<div class = "sable">
+		<img src = "https://upload.wikimedia.org/wikipedia/commons/7/76/House_of_the_Mole.svg">
+		<div class = "croix">
+			<div class = "argent">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/e/ef/Arms_of_the_diocese_of_Verdun.svg">
+			</div>
+		</div>
+		<div class = "fasce">
+			<div class = "or">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/6/65/Ecu_de_sable_%C3%A0_la_fasce_d%27or.svg">
+			</div>
+			<div class = "argent">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/8/85/Blason_Walsee.svg">
+			</div>
+		</div>
+		<div class = "deux-fasces">
+			<div class = "or">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/7/7f/Blason_ville_be_Watou.svg">
+				<div class = "chef">
+					<div class = "trois-roses">
+						<div class = "or">
+							<!-- <img src = "https://dechav.pages-perso.free.fr/armorial/png/Chavagnac_aines.png"> -->
+							<img src = "local/Aînés - XVe.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "argent">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/6/62/Blason_famille_fr_de_Saint-Mauris.svg">
+				<div class = "chef">
+					<div class = "trois-roses">
+						<div class = "or">
+							<!-- <img src = "https://dechav.pages-perso.free.fr/armorial/png/Chavagnac_ancien.png"> -->
+							<img src = "local/Ancien - XVe.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "trois-fasces">
+			<div class = "argent">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/7/76/Blason_Famille_B%C3%A9jarry.svg">
+				<div class = "chef">
+					<div class = "trois-roses">
+						<div class = "or">
+							<!-- <img src = "https://dechav.pages-perso.free.fr/armorial/png/Chavagnac_moderne.png"> -->
+							<img src = "local/Moderne - XVIIe.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "pourpre">
+		<img src = "https://upload.wikimedia.org/wikipedia/commons/4/45/De_Bara_-_Le_blason_des_armoiries%2C_1579_%28page_23_crop_3%29.svg">
+	</div>
+	<div class = "vair">
+		<img src = "https://upload.wikimedia.org/wikipedia/commons/6/68/Vair_plain.svg">
+	</div>
+	<div class = "hermine">
+		<img src = "https://upload.wikimedia.org/wikipedia/commons/8/8c/Arms_of_Jean_III_de_Bretagne.svg">
+		<div class = "bande">
+			<div class = "ondée">
+				<div class = "azur">
+					<img src = "https://upload.wikimedia.org/wikipedia/commons/0/08/Blason_Loire_Atlantique.svg">
+				</div>
+			</div>
+		</div>
+		<div class = "bordure">
+			<div class = "gueules">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/1/10/Arms_of_Guy_de_Penthi%C3%A8vre.svg">
+				<div class = "huit-besants">
+					<div class = "argent">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/b/b1/Arms_of_Pierre_de_L%C3%A9on.svg">
+					</div>
+				</div>
+			</div>
+			<div class = "engrelée">
+				<div class = "gueules">
+					<img src = "https://upload.wikimedia.org/wikipedia/commons/8/8c/Arms_of_Richard_d%27Etampes.svg?">
+				</div>
+			</div>
+			<div class = "endentée">
+				<div class = "gueules">
+					<img src = "https://wappenwiki.org/images/f/f3/Richard_of_Brittany.svg">
+				</div>
+			</div>
+		</div>
+		<div class = "chef">
+			<div class = "gueules">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/1/11/Blason_ville_fr_Achicourt_%28Pas-de-Calais%29.svg">
+				<div class = "trois-roses">
+					<div class = "or">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/d/da/Blason_ville_fr_Grand-Corent_%28Ain%29.svg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "échiqueté">
+		<div class = "or-azur">
+			<img src = "https://upload.wikimedia.org/wikipedia/commons/3/39/Arms_of_Raoul_de_Vermandois.svg">
+			<div class = "lambel">
+				<div class = "gueules">
+					<img src = "https://wappenwiki.org/images/a/ad/Vermandois_Chaumont.svg">
+					<div class = "bordure">
+						<div class = "gueules">
+							<img src = "https://wappenwiki.org/images/7/74/Robert_III_of_Dreux.svg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "bordure">
+				<div class = "gueules">
+					<img src = "https://upload.wikimedia.org/wikipedia/commons/f/f3/Arms_of_Robert_de_Dreux.svg">
+					<div class = "franc-quartier">
+						<div class = "hermine">
+							<img src = "https://upload.wikimedia.org/wikipedia/commons/f/fe/Arms_of_Pierre_Mauclerc.svg">
+						</div>
+					</div>
+					<div class = "huit-besants">
+						<div class = "argent">
+							<div class = "franc-quartier">
+								<div class = "hermine">
+									<img src = "https://upload.wikimedia.org/wikipedia/commons/7/73/Arms_of_Pierre_de_Leon_(1).svg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "engrelée">
+					<div class = "gueules">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/6/69/Arms_of_Robert_de_Beu.svg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "bandé">
+		<div class = "or-azur">
+			<img src = "https://upload.wikimedia.org/wikipedia/commons/4/4a/Blason_de_la_famille_de_Lupp%C3%A9.svg">
+			<div class = "bordure">
+				<div class = "gueules">
+					<img src = "https://upload.wikimedia.org/wikipedia/commons/a/a1/Arms_of_Eudes_de_Bourgogne.svg">
+					<div class = "franc-quartier-hermine">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/7/73/Arms_of_Alexandre_de_Bourgogne.svg">
+					</div>
+				</div>
+				<div class = "endentée">
+					<div class = "gueules">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/5/5b/Arms_of_Eudes_de_Nevers.svg">
+					</div>
+				</div>
+				<div class = "engrelée">
+					<div class = "gueules">
+						<img src = "https://upload.wikimedia.org/wikipedia/commons/3/3c/Blason_Province_Nivernais.svg">
+					</div>
+					<div class = "franc-quartier">
+						<div class = "hermine">
+							<img src = "https://wappenwiki.org/images/0/05/Burgundy_Couches.svg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h2>Modifications</h2>
+
+<div class = "corps">
+	<button onclick = "filtre(this, '.or')"><span>d’</span>or</button>
+	<button onclick = "filtre(this, '.argent')"><span>d’</span>argent</button>
+
+	<button onclick = "filtre(this, '.azur')"><span>d’</span>azur</button>
+	<button onclick = "filtre(this, '.gueules')"><span>de </span>gueules</button>
+	<button onclick = "filtre(this, '.sinople')"><span>de </span>sinople</button>
+	<button onclick = "filtre(this, '.sable')"><span>de </span>sable</button>
+	<button onclick = "filtre(this, '.pourpre')"><span>de </span>pourpre</button>
+
+	<button onclick = "filtre(this, '.vair')"><span>de </span>vair</button>
+	<button onclick = "filtre(this, '.hermine')"><span>d’</span>hermine</button>
+
+	<button onclick = "filtre(this, '.échiqueté')">échiqueté</button>
+	<div class = "échiqueté">
+		<button onclick = "filtre(this, '.or-azur')"><span>d’</span>or et d’azur</button>
+	</div>
+	<button onclick = "filtre(this, '.bandé')">bandé</button>
+	<div class = "bandé">
+		<button onclick = "filtre(this, '.or-azur')"><span>d’</span>or et d’azur</button>
+	</div>
+</div>
+<br>
+<div id = "tous">
+	<div>
+		<button onclick = "filtre(this, '.semé-lys')">semé de fleurs de lys</button>
+		<div class = "semé-lys">
+			<button onclick = "filtre(this, '.or')"><span>d’</span>or</button>
+		</div>
+		<button onclick = "filtre(this, '.trois-lys')"><span>à </span>trois fleurs de lys</button>
+		<div class = "trois-lys">
+			<button onclick = "filtre(this, '.or')"><span>d’</span>or</button>
+		</div>
+		<button onclick = "filtre(this, '.croix')"><span>à la </span>croix</button>
+		<div class = "croix">
+			<button onclick = "filtre(this, '.argent')"><span>d’</span>argent</button>
+		</div>
+		<button onclick = "filtre(this, '.fasce')"><span>à une </span>fasce</button>
+		<div class = "fasce">
+			<button onclick = "filtre(this, '.or')"><span>d’</span>or</button>
+			<button onclick = "filtre(this, '.argent')"><span>d’</span>argent</button>
+			<button onclick = "filtre(this, '.sable')"><span>de </span>sable</button>
+		</div>
+		<button onclick = "filtre(this, '.deux-fasces')"><span>à </span>deux fasces</button>
+		<div class = "deux-fasces">
+			<button onclick = "filtre(this, '.or')"><span>d’</span>or</button>
+			<button onclick = "filtre(this, '.argent')"><span>d’</span>argent</button>
+			<button onclick = "filtre(this, '.gueules')"><span>de </span>gueules</button>
+			<button onclick = "filtre(this, '.sable')"><span>de </span>sable</button>
+		</div>
+		<button onclick = "filtre(this, '.trois-fasces')"><span>à </span>trois fasces</button>
+		<div class = "trois-fasces">
+			<button onclick = "filtre(this, '.argent')"><span>d’</span>argent</button>
+			<button onclick = "filtre(this, '.azur')"><span>d’</span>azur</button>
+		</div>
+	</div>
+	<br>
+	<div>
+		<button onclick = "filtre(this, '.bordure')"><span>à la </span>bordure</button>
+		<div class = "bordure">
+			<button onclick = "filtre(this, '.azur')"><span>d’</span>azur</button>
+			<div class = "azur">
+				<button onclick = "filtre(this, '.huit-besants')"><span>chargée de </span>huit besants</button>
+				<div class = "huit-besants">
+					<button onclick = "filtre(this, '.argent')"><span>d’</span>argent</button>
+				</div>
+			</div>
+			<button onclick = "filtre(this, '.gueules')"><span>de </span>gueules</button>
+			<div class = "gueules">
+				<button onclick = "filtre(this, '.huit-besants')"><span>chargée de </span>huit besants</button>
+				<div class = "huit-besants">
+					<button onclick = "filtre(this, '.argent')"><span>d’</span>argent</button>
+				</div>
+				<button onclick = "filtre(this, '.huit-coquilles')"><span>chargée de </span>huit coquilles</button>
+				<div class = "huit-coquilles">
+					<button onclick = "filtre(this, '.argent')"><span>d’</span>argent</button>
+				</div>
+			</div>
+			<button onclick = "filtre(this, '.engrelée')">engrelée</button>
+			<div class = "engrelée">
+				<button onclick = "filtre(this, '.gueules')"><span>de </span>gueules</button>
+				<button onclick = "filtre(this, '.componée')">componée</button>
+				<div class = "componée">
+					<button onclick = "filtre(this, '.argent-gueules')"><span>d’</span>argent et de gueules</button>
+				</div>
+			</div>
+			<button onclick = "filtre(this, '.endentée')">endentée</button>
+			<div class = "endentée">
+				<button onclick = "filtre(this, '.azur')"><span>d’</span>azur</button>
+				<button onclick = "filtre(this, '.gueules')"><span>de </span>gueules</button>
+			</div>
+			<button onclick = "filtre(this, '.crénelée')">crénelée</button>
+			<div class = "crénelée">
+				<button onclick = "filtre(this, '.or')"><span>d’</span>or</button>
+				<button onclick = "filtre(this, '.gueules')"><span>de </span>gueules</button>
+			</div>
+			<button onclick = "filtre(this, '.componée')">componée</button>
+			<div class = "componée">
+				<button onclick = "filtre(this, '.or-azur')"><span>d’</span>or et d’azur</button>
+				<button onclick = "filtre(this, '.argent-gueules')"><span>d’</span>argent et de gueules</button>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div>
+		<button onclick = "filtre(this, '.chef')"><span>au </span>chef</button>
+		<div class = "chef">
+			<button onclick = "filtre(this, '.azur')"><span>d’</span>azur</button>
+			<div class = "azur">
+				<button onclick = "filtre(this, '.trois-roses')"><span>à </span>trois roses</button>
+				<div class = "trois-roses">
+					<button onclick = "filtre(this, '.or')"><span>d’</span>or</button>
+				</div>
+			</div>
+			<button onclick = "filtre(this, '.gueules')"><span>de </span>gueules</button>
+			<div class = "gueules">
+				<button onclick = "filtre(this, '.trois-roses')"><span>à </span>trois roses</button>
+				<div class = "trois-roses">
+					<button onclick = "filtre(this, '.or')"><span>d’</span>or</button>
+				</div>
+			</div>
+			<button onclick = "filtre(this, '.trois-roses')"><span>à </span>trois roses</button>
+			<div class = "trois-roses">
+				<button onclick = "filtre(this, '.or')"><span>d’</span>or</button>
+				<button onclick = "filtre(this, '.sable')"><span>de </span>sable</button>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div>
+		<button onclick = "filtre(this, '.franc-quartier')"><span>au </span>franc-quartier</button>
+		<div class = "franc-quartier">
+			<button onclick = "filtre(this, '.hermine')"><span>d’</span>hermine</button>
+		</div>
+	</div>
+	<br>
+	<div>
+		<button onclick = "filtre(this, '.bande')"><span>à la </span>bande</button>
+		<div class = "bande">
+			<button onclick = "filtre(this, '.or')"><span>d’</span>or</button>
+			<button onclick = "filtre(this, '.azur')"><span>d’</span>azur</button>
+			<button onclick = "filtre(this, '.gueules')"><span>de </span>gueules</button>
+			<button onclick = "filtre(this, '.ondée')">ondée</button>
+			<div class = "ondée">
+				<button onclick = "filtre(this, '.azur')"><span>d’</span>azur</button>
+			</div>
+			<button onclick = "filtre(this, '.componée')">componée</button>
+			<div class = "componée">
+				<button onclick = "filtre(this, '.or-azur')"><span>d’</span>or et d’azur</button>
+				<button onclick = "filtre(this, '.argent-gueules')"><span>d’</span>argent et de gueules</button>
+			</div>
+		</div>
+		<button onclick = "filtre(this, '.trois-bande')"><span>à </span>trois bandes</button>
+		<div class = "trois-bandes">
+			<button onclick = "filtre(this, '.or')"><span>d’</span>or</button>
+			<button onclick = "filtre(this, '.azur')"><span>d’</span>azur</button>
+		</div>
+	</div>
+	<br>
+	<div>
+		<button onclick = "filtre(this, '.lambel')"><span>au </span>lambel</button>
+		<div class = "lambel">
+			<button onclick = "filtre(this, '.argent')"><span>d’</span>argent</button>
+			<button onclick = "filtre(this, '.gueules')"><span>de </span>gueules</button>
+		</div>
+	</div>
+</div>
+
+<h2>Description héraldique</h2>
+
+<p id = "description"></p>
+
+</body>
+</html>
+
+<!-- problème : la bordure de "tous" clignote en gris WTF ?? -->
