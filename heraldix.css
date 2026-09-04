@@ -39,12 +39,6 @@ hr {
 }
 
 img {border-radius: 0;}
-.logo {
-	width: 200px;
-	border: 2px solid #ffffff;
-	border-radius: 40px;
-}
-.logo:hover {border: 2px solid #e8c869;}
 
 span {
 	font-family: gabriola;
@@ -99,8 +93,6 @@ h2 {
 }
 
 hr {height: 4px;}
-
-.logo {width: 300px;}
 
 .important {
 	bottom: 50px;
