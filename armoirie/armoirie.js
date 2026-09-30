@@ -338,7 +338,7 @@ function titrer() {
 	if (branche) {intérieur += " " + branche}
 	document.title = "Armoirie" + intérieur;
 	obtenir("h1", "S")[1].innerHTML = "<hr>Armoirie" + intérieur + "<hr>";
-	polygramme();
+	heraldix();
 }
 
 function concordance(mot, article) {
