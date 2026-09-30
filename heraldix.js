@@ -34,5 +34,3 @@ function obtenir(identifiant, type) {
 	else if (type == "S") {return document.querySelectorAll(identifiant);}
 	else if (type == "N") {return document.getElementsByName(identifiant);}
 }
-
-window.addEventListener("load", caractères);
