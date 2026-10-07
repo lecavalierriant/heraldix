@@ -44,7 +44,7 @@ span {
 	font-family: gabriola;
 	font-style: italic;
 	font-size: 30px;
-	color: #000000;
+	color: #000;
 }
 
 table {display: none;}
@@ -68,7 +68,7 @@ table {display: none;}
 button,
 input,
 select {
-	border: 4px #ffffff solid;
+	border: 4px #fff solid;
 	margin: 20px;
 	padding: 20px;
 }
