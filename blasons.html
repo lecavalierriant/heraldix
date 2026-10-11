@@ -4,6 +4,7 @@
 	<meta charset = "utf-8">
 	<link rel = "stylesheet" href = "https://lecavalierriant.github.io/lecavalierriant/lecavalierriant.css">
 	<link rel = "stylesheet" href = "../polygramme/heraldix.css">
+	<link rel = "stylesheet" href = "heraldix.css">
 	<script src = "../polygramme/heraldix.js"></script>
 	<style>
 		button {font-size: 20px;}
@@ -43,9 +44,9 @@
 			}
 			masquer(élément);
 		}
-		function classes(élément) {
-			let classes = [];
-			let elementActuel = élément;
+		function classesde(élément) {
+			classes = [];
+			elementActuel = élément;
 			while (elementActuel) {
 				if (elementActuel.className) {classes.unshift("." + elementActuel.className + " > ");}
 				elementActuel = elementActuel.parentElement;
@@ -53,7 +54,7 @@
 			return classes.join("");
 		}
 		function masquer(bouton) {
-			// const boutons = bouton.parentElement.children;
+			// boutons = bouton.parentElement.children;
 			// Array.from(boutons).forEach(
 			// 	élément => {
 			// 		if (élément != bouton) {
