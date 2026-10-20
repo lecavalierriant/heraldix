@@ -54,7 +54,7 @@ table {display: none;}
 .important {
 	position: sticky;
 	padding: 25px;
-	background-color: #005500;
+	background-color: #050;
 }
 
 @media (max-width: 1000px) {
